@@ -1,3 +1,22 @@
+// On first install, open chrome://extensions/shortcuts so the user can assign
+// the browser-reserved combos (Ctrl+W, ...) to our no-op "block-*" commands —
+// the only reliable way to neutralize them. (Extensions can't auto-assign.)
+chrome.runtime.onInstalled.addListener((details) => {
+  if (details.reason === 'install') {
+    chrome.tabs.create({ url: 'chrome://extensions/shortcuts' });
+  }
+});
+
+// Absorb browser-reserved shortcuts (Ctrl+W, Ctrl+T, ...) that a content
+// script's preventDefault() cannot cancel. When the user assigns these combos
+// to our "block-*" commands at chrome://extensions/shortcuts, Chrome routes
+// the keystroke here instead of performing its built-in action. We
+// intentionally do nothing — the command handler "swallows" the shortcut.
+chrome.commands.onCommand.addListener((command) => {
+  // no-op: receiving the command is what neutralizes the shortcut
+  console.debug('[disable shortcut] swallowed browser command:', command);
+});
+
 // Listen for storage changes and broadcast to all content scripts
 chrome.storage.onChanged.addListener((changes, namespace) => {
   if (namespace !== 'sync') return;

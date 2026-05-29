@@ -1,13 +1,13 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512">
   <!-- background -->
-  <rect width="512" height="512" rx="96" fill="#2b2f3a"/>
+  <rect width="512" height="512" rx="96" fill="#ffffff"/>
 
   <!-- key cap (enlarged) -->
   <g>
-    <rect x="48" y="78" width="416" height="356" rx="48" fill="#5a6478"/>
-    <rect x="48" y="78" width="416" height="356" rx="48" fill="none" stroke="#3a4051" stroke-width="12"/>
+    <rect x="48" y="78" width="416" height="356" rx="48" fill="#cfcfcf"/>
+    <rect x="48" y="78" width="416" height="356" rx="48" fill="none" stroke="#a8a8a8" stroke-width="12"/>
     <!-- top face of the key -->
-    <rect x="84" y="108" width="344" height="262" rx="32" fill="#7e8aa3"/>
+    <rect x="84" y="108" width="344" height="262" rx="32" fill="#e6e6e6"/>
     <!-- label: Ctrl -->
     <text x="256" y="290" text-anchor="middle"
           font-family="Helvetica, Arial, sans-serif" font-weight="700"

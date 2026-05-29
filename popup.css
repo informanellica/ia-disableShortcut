@@ -4,13 +4,54 @@
   box-sizing: border-box;
 }
 
+.hidden {
+  display: none !important;
+}
+
+/* ---- Theme variables (Bootstrap palette) ---- */
+/* Dark = Bootstrap 5.3 data-bs-theme="dark" */
+:root, body.theme-dark {
+  --bg: #212529;              /* body-bg */
+  --bg-elevated: #2b3035;     /* tertiary-bg */
+  --surface: #343a40;         /* secondary-bg / gray-800 */
+  --surface-hover: #495057;   /* gray-700 */
+  --border: #495057;          /* border-color */
+  --border-strong: #6c757d;   /* gray-600 */
+  --item-border: #343a40;
+  --item-hover: #2b3035;
+  --text: #dee2e6;            /* body-color */
+  --text-muted: #adb5bd;      /* secondary-color / gray-500 */
+  --accent: #0d6efd;          /* primary */
+  --accent-text: #ffffff;
+  --key-text: #e685b5;        /* pink (lightened for dark) */
+  --danger: #ea868f;          /* danger-text-emphasis */
+}
+
+/* Light = Bootstrap default theme */
+body.theme-light {
+  --bg: #ffffff;              /* body-bg */
+  --bg-elevated: #f8f9fa;     /* gray-100 / tertiary-bg */
+  --surface: #e9ecef;         /* gray-200 / secondary-bg */
+  --surface-hover: #dee2e6;   /* gray-300 */
+  --border: #dee2e6;          /* border-color */
+  --border-strong: #ced4da;   /* gray-400 */
+  --item-border: #e9ecef;
+  --item-hover: #f8f9fa;
+  --text: #212529;            /* body-color / gray-900 */
+  --text-muted: #6c757d;      /* secondary-color / gray-600 */
+  --accent: #0d6efd;          /* primary */
+  --accent-text: #ffffff;
+  --key-text: #d63384;        /* pink (code color) */
+  --danger: #dc3545;          /* danger */
+}
+
 body {
   width: 360px;
   max-height: 500px;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
   font-size: 13px;
-  color: #e0e0e0;
-  background: #1e1e2e;
+  color: var(--text);
+  background: var(--bg);
   overflow-y: auto;
 }
 
@@ -19,8 +60,8 @@ body {
   align-items: center;
   justify-content: space-between;
   padding: 12px 16px;
-  background: #181825;
-  border-bottom: 1px solid #313244;
+  background: var(--bg-elevated);
+  border-bottom: 1px solid var(--border);
   position: sticky;
   top: 0;
   z-index: 10;
@@ -29,7 +70,7 @@ body {
 .header h1 {
   font-size: 15px;
   font-weight: 600;
-  color: #cdd6f4;
+  color: var(--text);
 }
 
 .header-actions {
@@ -37,10 +78,10 @@ body {
   gap: 6px;
 }
 
-.btn-toggle-all, .btn-add {
-  border: 1px solid #45475a;
-  background: #313244;
-  color: #cdd6f4;
+.btn-add, .btn-theme {
+  border: 1px solid var(--border-strong);
+  background: var(--surface);
+  color: var(--text);
   padding: 4px 10px;
   border-radius: 6px;
   cursor: pointer;
@@ -49,14 +90,26 @@ body {
   transition: background 0.15s;
 }
 
-.btn-toggle-all:hover, .btn-add:hover {
-  background: #45475a;
+.btn-theme {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 4px 8px;
+  line-height: 1;
+}
+
+.btn-theme svg {
+  display: block;
+}
+
+.btn-add:hover, .btn-theme:hover {
+  background: var(--surface-hover);
 }
 
 .custom-form {
   padding: 10px 16px;
-  background: #181825;
-  border-bottom: 1px solid #313244;
+  background: var(--bg-elevated);
+  border-bottom: 1px solid var(--border);
 }
 
 .custom-form.hidden {
@@ -72,16 +125,55 @@ body {
 .capture-area input {
   flex: 1;
   padding: 6px 10px;
-  border: 1px solid #45475a;
+  border: 1px solid var(--border-strong);
   border-radius: 6px;
-  background: #313244;
-  color: #cdd6f4;
+  background: var(--surface);
+  color: var(--text);
   font-size: 12px;
   outline: none;
 }
 
 .capture-area input:focus {
-  border-color: #89b4fa;
+  border-color: var(--accent);
+}
+
+.btn-capture {
+  border: 1px solid var(--border-strong);
+  background: var(--surface);
+  color: var(--text);
+  padding: 0 12px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 12px;
+  font-weight: 600;
+  white-space: nowrap;
+  transition: background 0.15s;
+}
+
+.btn-capture:hover {
+  background: var(--surface-hover);
+}
+
+.btn-capture.active {
+  background: var(--accent);
+  color: var(--accent-text);
+  border-color: var(--accent);
+}
+
+.custom-input {
+  width: 100%;
+  padding: 6px 10px;
+  margin-bottom: 8px;
+  border: 1px solid var(--border-strong);
+  border-radius: 6px;
+  background: var(--surface);
+  color: var(--text);
+  font-size: 12px;
+  outline: none;
+}
+
+.custom-input:focus {
+  border-color: var(--accent);
 }
 
 .form-actions {
@@ -100,21 +192,44 @@ body {
 }
 
 .btn-save {
-  background: #89b4fa;
-  color: #1e1e2e;
+  background: var(--accent);
+  color: var(--accent-text);
 }
 
 .btn-cancel {
-  background: #45475a;
-  color: #cdd6f4;
+  background: var(--surface-hover);
+  color: var(--text);
+}
+
+.search-bar {
+  display: flex;
+  gap: 8px;
+  padding: 8px 16px;
+  background: var(--bg);
+  border-bottom: 1px solid var(--border);
+}
+
+.search-bar input {
+  flex: 1;
+  padding: 6px 10px;
+  border: 1px solid var(--border-strong);
+  border-radius: 6px;
+  background: var(--surface);
+  color: var(--text);
+  font-size: 12px;
+  outline: none;
+}
+
+.search-bar input:focus {
+  border-color: var(--accent);
 }
 
 .category-tabs {
   display: flex;
   gap: 2px;
   padding: 8px 16px;
-  background: #1e1e2e;
-  border-bottom: 1px solid #313244;
+  background: var(--bg);
+  border-bottom: 1px solid var(--border);
   position: sticky;
   top: 49px;
   z-index: 9;
@@ -126,7 +241,7 @@ body {
   border: none;
   border-radius: 20px;
   background: transparent;
-  color: #6c7086;
+  color: var(--text-muted);
   cursor: pointer;
   font-size: 12px;
   font-weight: 500;
@@ -135,12 +250,12 @@ body {
 }
 
 .tab:hover {
-  color: #cdd6f4;
+  color: var(--text);
 }
 
 .tab.active {
-  background: #313244;
-  color: #89b4fa;
+  background: var(--surface);
+  color: var(--accent);
 }
 
 .shortcut-list {
@@ -148,21 +263,84 @@ body {
   padding: 4px 0;
 }
 
+.bulk-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 8px 16px;
+  border-bottom: 1px solid var(--item-border);
+}
+
+.bulk-label {
+  font-size: 12px;
+  color: var(--text-muted);
+}
+
+.bulk-actions {
+  display: flex;
+  gap: 4px;
+}
+
+.btn-bulk {
+  border: 1px solid var(--border-strong);
+  background: transparent;
+  color: var(--text-muted);
+  padding: 3px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 12px;
+  font-weight: 600;
+  transition: background 0.15s, color 0.15s;
+}
+
+.btn-bulk:hover {
+  background: var(--surface);
+  color: var(--text);
+}
+
+.btn-bulk.active {
+  background: var(--accent);
+  color: var(--accent-text);
+  border-color: var(--accent);
+}
+
+.add-custom-row {
+  padding: 8px 16px;
+}
+
+.btn-add-custom {
+  width: 100%;
+  padding: 8px;
+  border: 1px dashed var(--border-strong);
+  border-radius: 6px;
+  background: transparent;
+  color: var(--accent);
+  cursor: pointer;
+  font-size: 12px;
+  font-weight: 600;
+  transition: background 0.15s, border-color 0.15s;
+}
+
+.btn-add-custom:hover {
+  background: var(--surface);
+  border-color: var(--accent);
+}
+
 .shortcut-item {
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 8px 16px;
-  border-bottom: 1px solid #252536;
+  border-bottom: 1px solid var(--item-border);
   transition: background 0.1s;
 }
 
 .shortcut-item:hover {
-  background: #252536;
+  background: var(--item-hover);
 }
 
-.shortcut-item.disabled {
-  opacity: 0.5;
+.shortcut-item.blocked .shortcut-label {
+  color: var(--danger);
 }
 
 .shortcut-info {
@@ -182,21 +360,79 @@ body {
 .key {
   display: inline-block;
   padding: 2px 6px;
-  background: #313244;
-  border: 1px solid #45475a;
+  background: var(--surface);
+  border: 1px solid var(--border-strong);
   border-radius: 4px;
   font-size: 11px;
   font-family: 'SF Mono', 'Consolas', monospace;
-  color: #f5c2e7;
+  color: var(--text);
   line-height: 1.4;
 }
 
 .shortcut-label {
   font-size: 11px;
-  color: #6c7086;
+  color: var(--text-muted);
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
+}
+
+.shortcut-note {
+  font-size: 10px;
+  line-height: 1.4;
+  margin-top: 2px;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  flex-wrap: wrap;
+}
+
+.shortcut-note.needs-setup,
+.shortcut-note.unblockable {
+  color: var(--danger);
+}
+
+/* Gear control: replaces the toggle for browser-reserved combos that must be
+   assigned at chrome://extensions/shortcuts. */
+.btn-gear {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 20px;
+  flex-shrink: 0;
+  border: 1px solid var(--border-strong);
+  background: var(--surface);
+  color: var(--text-muted);
+  border-radius: 6px;
+  cursor: pointer;
+  padding: 0;
+  transition: background 0.15s, color 0.15s;
+}
+
+.btn-gear:hover {
+  background: var(--surface-hover);
+  color: var(--accent);
+}
+
+.btn-gear svg {
+  display: block;
+}
+
+/* Lock indicator: shown for combos nothing can block (F12, Ctrl+Tab). */
+.ctrl-locked {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 20px;
+  flex-shrink: 0;
+  color: var(--text-muted);
+  opacity: 0.6;
+}
+
+.ctrl-locked svg {
+  display: block;
 }
 
 .shortcut-actions {
@@ -223,7 +459,7 @@ body {
   position: absolute;
   cursor: pointer;
   top: 0; left: 0; right: 0; bottom: 0;
-  background: #45475a;
+  background: var(--surface-hover);
   border-radius: 20px;
   transition: background 0.2s;
 }
@@ -235,13 +471,14 @@ body {
   width: 14px;
   left: 3px;
   bottom: 3px;
-  background: #cdd6f4;
+  background: #ffffff;
   border-radius: 50%;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.35);
   transition: transform 0.2s;
 }
 
 .toggle input:checked + .toggle-slider {
-  background: #89b4fa;
+  background: var(--accent);
 }
 
 .toggle input:checked + .toggle-slider::before {
@@ -251,7 +488,7 @@ body {
 .btn-delete {
   background: none;
   border: none;
-  color: #6c7086;
+  color: var(--text-muted);
   cursor: pointer;
   font-size: 14px;
   padding: 2px;
@@ -261,19 +498,83 @@ body {
 }
 
 .btn-delete:hover {
-  color: #f38ba8;
+  color: var(--danger);
+}
+
+/* ---- Registration guide overlay ---- */
+.guide-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 16px;
+  z-index: 100;
+}
+
+.guide-overlay.hidden {
+  display: none;
+}
+
+.guide-card {
+  background: var(--bg-elevated);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 16px;
+  width: 100%;
+  max-width: 320px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
+}
+
+.guide-title {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--text);
+  margin-bottom: 8px;
+}
+
+.guide-target {
+  font-size: 12px;
+  color: var(--accent);
+  margin-bottom: 10px;
+}
+
+.guide-steps {
+  margin: 0 0 10px 18px;
+  padding: 0;
+  font-size: 12px;
+  color: var(--text);
+  line-height: 1.7;
+}
+
+.guide-steps b {
+  color: var(--key-text);
+}
+
+.guide-note {
+  font-size: 11px;
+  color: var(--text-muted);
+  margin-bottom: 12px;
+  line-height: 1.5;
+}
+
+.guide-actions {
+  display: flex;
+  gap: 6px;
+  justify-content: flex-end;
 }
 
 .footer {
   padding: 8px 16px;
   text-align: center;
-  border-top: 1px solid #313244;
-  background: #181825;
+  border-top: 1px solid var(--border);
+  background: var(--bg-elevated);
   position: sticky;
   bottom: 0;
 }
 
 .status {
   font-size: 11px;
-  color: #6c7086;
+  color: var(--text-muted);
 }

@@ -6,18 +6,20 @@
 </head>
 <body>
   <div class="header">
-    <h1>Shortcut Manager</h1>
+    <h1>disable shortcut</h1>
     <div class="header-actions">
-      <button id="toggleAll" class="btn-toggle-all" title="全て切替">ALL</button>
-      <button id="addCustom" class="btn-add" title="カスタム追加">+</button>
+      <button id="openShortcuts" class="btn-theme" title="Chrome のショートカット設定を開く"></button>
+      <button id="themeToggle" class="btn-theme" title="テーマ切替"></button>
+      <button id="toggleSearch" class="btn-theme" title="検索"></button>
     </div>
   </div>
 
   <div id="customForm" class="custom-form hidden">
     <div class="capture-area">
-      <input id="captureInput" type="text" placeholder="ここでキーを押してください" readonly>
-      <input id="customLabel" type="text" placeholder="ラベル (任意)">
+      <input id="captureInput" type="text" placeholder="例: Ctrl + K（直接入力可）">
+      <button id="captureToggle" class="btn-capture" title="キーを押して記録">記録</button>
     </div>
+    <input id="customLabel" type="text" class="custom-input" placeholder="ラベル (任意)">
     <div class="form-actions">
       <button id="saveCustom" class="btn-save">追加</button>
       <button id="cancelCustom" class="btn-cancel">キャンセル</button>
@@ -33,7 +35,30 @@
     <button class="tab" data-category="custom">カスタム</button>
   </div>
 
+  <div id="searchBar" class="search-bar hidden">
+    <input id="searchInput" type="text" placeholder="ショートカットを検索">
+    <button id="searchAdd" class="btn-capture hidden" type="button">追加</button>
+  </div>
+
   <ul id="shortcutList" class="shortcut-list"></ul>
+
+  <div id="guideOverlay" class="guide-overlay hidden">
+    <div class="guide-card">
+      <div class="guide-title">ショートカット登録の手順</div>
+      <p class="guide-target" id="guideTarget"></p>
+      <ol class="guide-steps">
+        <li>下の「設定ページを開く」を押す</li>
+        <li>一覧から <b>「disable shortcut」</b> を探す</li>
+        <li id="guideRow">対象の欄の入力ボックスをクリック</li>
+        <li>キーを実際に押して記録する</li>
+      </ol>
+      <p class="guide-note">登録すると、そのキーは何もしないコマンドに割り当てられ無効化されます。</p>
+      <div class="guide-actions">
+        <button id="guideOpen" class="btn-save" type="button">設定ページを開く</button>
+        <button id="guideClose" class="btn-cancel" type="button">閉じる</button>
+      </div>
+    </div>
+  </div>
 
   <div class="footer">
     <span class="status" id="status"></span>
