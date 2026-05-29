@@ -8,13 +8,10 @@
     <rect x="48" y="78" width="416" height="356" rx="48" fill="none" stroke="#3a4051" stroke-width="12"/>
     <!-- top face of the key -->
     <rect x="84" y="108" width="344" height="262" rx="32" fill="#7e8aa3"/>
-    <!-- label: Ctrl * -->
-    <text x="256" y="252" text-anchor="middle"
+    <!-- label: Ctrl -->
+    <text x="256" y="290" text-anchor="middle"
           font-family="Helvetica, Arial, sans-serif" font-weight="700"
-          font-size="150" fill="#1f2330">Ctrl</text>
-    <text x="256" y="346" text-anchor="middle"
-          font-family="Helvetica, Arial, sans-serif" font-weight="700"
-          font-size="112" fill="#1f2330">&#42;</text>
+          font-size="170" fill="#1f2330">Ctrl</text>
   </g>
 
   <!-- prohibition slash -->
