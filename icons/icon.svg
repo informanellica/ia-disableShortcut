@@ -2,21 +2,21 @@
   <!-- background -->
   <rect width="512" height="512" rx="96" fill="#2b2f3a"/>
 
-  <!-- key cap -->
+  <!-- key cap (enlarged) -->
   <g>
-    <rect x="86" y="116" width="340" height="280" rx="40" fill="#5a6478"/>
-    <rect x="86" y="116" width="340" height="280" rx="40" fill="none" stroke="#3a4051" stroke-width="10"/>
-    <!-- top highlight face of the key -->
-    <rect x="116" y="140" width="280" height="200" rx="26" fill="#7e8aa3"/>
+    <rect x="48" y="78" width="416" height="356" rx="48" fill="#5a6478"/>
+    <rect x="48" y="78" width="416" height="356" rx="48" fill="none" stroke="#3a4051" stroke-width="12"/>
+    <!-- top face of the key -->
+    <rect x="84" y="108" width="344" height="262" rx="32" fill="#7e8aa3"/>
     <!-- label: Ctrl * -->
-    <text x="256" y="258" text-anchor="middle"
+    <text x="256" y="252" text-anchor="middle"
           font-family="Helvetica, Arial, sans-serif" font-weight="700"
-          font-size="118" fill="#1f2330">Ctrl</text>
-    <text x="256" y="332" text-anchor="middle"
+          font-size="150" fill="#1f2330">Ctrl</text>
+    <text x="256" y="346" text-anchor="middle"
           font-family="Helvetica, Arial, sans-serif" font-weight="700"
-          font-size="92" fill="#1f2330">&#42;</text>
+          font-size="112" fill="#1f2330">&#42;</text>
   </g>
 
   <!-- prohibition slash -->
-  <line x1="96" y1="416" x2="416" y2="96" stroke="#e8467c" stroke-width="42" stroke-linecap="round"/>
+  <line x1="86" y1="426" x2="426" y2="86" stroke="#e8467c" stroke-width="44" stroke-linecap="round"/>
 </svg>
