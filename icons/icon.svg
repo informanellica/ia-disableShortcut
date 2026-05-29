@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512">
+  <!-- background -->
+  <rect width="512" height="512" rx="96" fill="#2b2f3a"/>
+
+  <!-- key cap -->
+  <g>
+    <rect x="86" y="116" width="340" height="280" rx="40" fill="#5a6478"/>
+    <rect x="86" y="116" width="340" height="280" rx="40" fill="none" stroke="#3a4051" stroke-width="10"/>
+    <!-- top highlight face of the key -->
+    <rect x="116" y="140" width="280" height="200" rx="26" fill="#7e8aa3"/>
+    <!-- label: Ctrl * -->
+    <text x="256" y="258" text-anchor="middle"
+          font-family="Helvetica, Arial, sans-serif" font-weight="700"
+          font-size="118" fill="#1f2330">Ctrl</text>
+    <text x="256" y="332" text-anchor="middle"
+          font-family="Helvetica, Arial, sans-serif" font-weight="700"
+          font-size="92" fill="#1f2330">&#42;</text>
+  </g>
+
+  <!-- prohibition slash -->
+  <line x1="96" y1="416" x2="416" y2="96" stroke="#e8467c" stroke-width="42" stroke-linecap="round"/>
+</svg>

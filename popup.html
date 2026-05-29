@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <div class="header">
+    <h1>Shortcut Manager</h1>
+    <div class="header-actions">
+      <button id="toggleAll" class="btn-toggle-all" title="全て切替">ALL</button>
+      <button id="addCustom" class="btn-add" title="カスタム追加">+</button>
+    </div>
+  </div>
+
+  <div id="customForm" class="custom-form hidden">
+    <div class="capture-area">
+      <input id="captureInput" type="text" placeholder="ここでキーを押してください" readonly>
+      <input id="customLabel" type="text" placeholder="ラベル (任意)">
+    </div>
+    <div class="form-actions">
+      <button id="saveCustom" class="btn-save">追加</button>
+      <button id="cancelCustom" class="btn-cancel">キャンセル</button>
+    </div>
+  </div>
+
+  <div class="category-tabs">
+    <button class="tab active" data-category="all">全て</button>
+    <button class="tab" data-category="navigation">ナビ</button>
+    <button class="tab" data-category="editing">編集</button>
+    <button class="tab" data-category="tab">タブ</button>
+    <button class="tab" data-category="dev">開発</button>
+    <button class="tab" data-category="custom">カスタム</button>
+  </div>
+
+  <ul id="shortcutList" class="shortcut-list"></ul>
+
+  <div class="footer">
+    <span class="status" id="status"></span>
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+</html>
