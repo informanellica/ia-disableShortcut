@@ -148,6 +148,9 @@
   "statusAllEnabled": {
     "message": "所有快捷键已启用"
   },
+  "showReserved": {
+    "message": "显示浏览器保留的快捷键"
+  },
   "sc_nav_back": {
     "message": "后退"
   },

@@ -148,6 +148,9 @@
   "statusAllEnabled": {
     "message": "Todos los atajos activados"
   },
+  "showReserved": {
+    "message": "Mostrar atajos reservados del navegador"
+  },
   "sc_nav_back": {
     "message": "Atrás"
   },

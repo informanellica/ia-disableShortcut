@@ -19,12 +19,12 @@ const OUT = path.join(ROOT, "dist", "store-assets");
 
 const CONFIG = {
   storeName: "Shortcut Blocker",
-  zip: "shortcut-blocker-v1.0.2.zip",
+  zip: "shortcut-blocker-v1.0.3.zip",
   uiLocale: "ja",
   privacy: "https://informanellica.github.io/ia-disableShortcut/PRIVACY",
   category: "ツール (Tools) ／ 代替: ユーザー補助機能",
   perms: "storage, host access (all sites)",
-  version: "1.0.2",
+  version: "1.0.3",
   summaryEN: "Turn individual keyboard shortcuts on or off while browsing — block accidental Ctrl+W, Backspace navigation, F12, and more.",
   summaryJA: "ブラウジング中のキーボードショートカットを個別にオン/オフ。誤操作の Ctrl+W、Backspace での戻る、F12 などをブロックできます。",
   homepage: "https://informanellica.github.io/",

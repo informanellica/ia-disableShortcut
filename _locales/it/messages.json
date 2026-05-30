@@ -148,6 +148,9 @@
   "statusAllEnabled": {
     "message": "Tutte le scorciatoie attivate"
   },
+  "showReserved": {
+    "message": "Mostra scorciatoie riservate al browser"
+  },
   "sc_nav_back": {
     "message": "Indietro"
   },

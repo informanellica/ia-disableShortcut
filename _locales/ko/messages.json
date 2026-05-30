@@ -148,6 +148,9 @@
   "statusAllEnabled": {
     "message": "모든 단축키 활성화됨"
   },
+  "showReserved": {
+    "message": "브라우저 예약 단축키 표시"
+  },
   "sc_nav_back": {
     "message": "뒤로"
   },

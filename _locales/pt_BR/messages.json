@@ -148,6 +148,9 @@
   "statusAllEnabled": {
     "message": "Todos os atalhos ativados"
   },
+  "showReserved": {
+    "message": "Mostrar atalhos reservados do navegador"
+  },
   "sc_nav_back": {
     "message": "Voltar"
   },

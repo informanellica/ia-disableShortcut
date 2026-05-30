@@ -118,12 +118,18 @@ function findBuiltinByKeys(keys) {
 let shortcuts = [];
 let currentCategory = 'all';
 let searchQuery = '';
+// Browser-reserved shortcuts (need chrome://extensions/shortcuts registration)
+// are hidden by default; this toggle reveals them.
+let showReserved = false;
 
 // Load shortcuts from storage
 async function loadShortcuts() {
-  const result = await chrome.storage.sync.get(['shortcuts', 'customShortcuts']);
+  const result = await chrome.storage.sync.get(['shortcuts', 'customShortcuts', 'showReserved']);
   const saved = result.shortcuts || {};
   const custom = result.customShortcuts || [];
+  showReserved = result.showReserved === true;
+  const toggleReservedEl = document.getElementById('toggleReserved');
+  if (toggleReservedEl) toggleReservedEl.checked = showReserved;
 
   shortcuts = DEFAULT_SHORTCUTS.map(s => ({
     ...s,
@@ -218,6 +224,11 @@ function renderList() {
       const hay = `${scLabel(s)} ${s.keys.map(formatKey).join(' ')} ${s.keys.join(' ')}`.toLowerCase();
       return hay.includes(q);
     });
+  }
+
+  // Hide browser-reserved shortcuts unless the user opted to show them.
+  if (!showReserved) {
+    filtered = filtered.filter(s => !BROWSER_RESERVED.has(s.id));
   }
 
   // Bulk ON/OFF control at the top of each tab (when there are items)
@@ -612,6 +623,13 @@ document.getElementById('saveCustom').addEventListener('click', () => {
   renderList();
   customForm.classList.add('hidden');
   setCapturing(false);
+});
+
+// Show/hide browser-reserved shortcuts
+document.getElementById('toggleReserved').addEventListener('change', (e) => {
+  showReserved = e.target.checked;
+  chrome.storage.sync.set({ showReserved });
+  renderList();
 });
 
 // Initialize

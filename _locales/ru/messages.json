@@ -148,6 +148,9 @@
   "statusAllEnabled": {
     "message": "Все сочетания включены"
   },
+  "showReserved": {
+    "message": "Показывать зарезервированные браузером сочетания"
+  },
   "sc_nav_back": {
     "message": "Назад"
   },

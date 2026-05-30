@@ -148,6 +148,9 @@
   "statusAllEnabled": {
     "message": "Tous les raccourcis activés"
   },
+  "showReserved": {
+    "message": "Afficher les raccourcis réservés au navigateur"
+  },
   "sc_nav_back": {
     "message": "Précédent"
   },

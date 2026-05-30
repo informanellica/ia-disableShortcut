@@ -148,6 +148,9 @@
   "statusAllEnabled": {
     "message": "所有快速鍵已啟用"
   },
+  "showReserved": {
+    "message": "顯示瀏覽器保留的快速鍵"
+  },
   "sc_nav_back": {
     "message": "上一頁"
   },

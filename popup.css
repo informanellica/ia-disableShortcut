@@ -578,3 +578,18 @@ body {
   font-size: 11px;
   color: var(--text-muted);
 }
+
+.reserved-toggle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  font-size: 11px;
+  color: var(--text-muted);
+  cursor: pointer;
+  margin-bottom: 4px;
+}
+
+.reserved-toggle input {
+  cursor: pointer;
+}

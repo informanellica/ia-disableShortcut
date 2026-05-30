@@ -148,6 +148,9 @@
   "statusAllEnabled": {
     "message": "Alle Tastenkürzel aktiviert"
   },
+  "showReserved": {
+    "message": "Browserreservierte Tastenkürzel anzeigen"
+  },
   "sc_nav_back": {
     "message": "Zurück"
   },

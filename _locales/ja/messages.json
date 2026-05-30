@@ -148,6 +148,9 @@
   "statusAllEnabled": {
     "message": "全てのショートカットが有効"
   },
+  "showReserved": {
+    "message": "ブラウザ予約ショートカットを表示"
+  },
   "sc_nav_back": {
     "message": "戻る"
   },

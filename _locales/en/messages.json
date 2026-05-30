@@ -148,6 +148,9 @@
   "statusAllEnabled": {
     "message": "All shortcuts enabled"
   },
+  "showReserved": {
+    "message": "Show browser-reserved shortcuts"
+  },
   "sc_nav_back": {
     "message": "Back"
   },
