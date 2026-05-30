@@ -28,7 +28,7 @@ const CONFIG = {
   summaryEN: "Turn individual keyboard shortcuts on or off while browsing — block accidental Ctrl+W, Backspace navigation, F12, and more.",
   summaryJA: "ブラウジング中のキーボードショートカットを個別にオン/オフ。誤操作の Ctrl+W、Backspace での戻る、F12 などをブロックできます。",
   homepage: "https://informanellica.github.io/",
-  support: "https://github.com/informanellica/ia-disableShortcut",
+  support: "https://informanellica.github.io/support.html#shortcut-blocker",
   singlePurpose: "Enable or disable specified keyboard shortcuts on web pages.",
   // Store "Description" (16,000 chars) per language — paste into the listing.
   desc: {
