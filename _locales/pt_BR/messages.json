@@ -1,0 +1,301 @@
+{
+  "appName": {
+    "message": "Shortcut Blocker"
+  },
+  "appDesc": {
+    "message": "Ative ou desative atalhos de teclado individuais ao navegar — bloqueie Ctrl+W acidental, navegação com Backspace, F12 e mais."
+  },
+  "openShortcutsTitle": {
+    "message": "Abrir a página de atalhos de teclado do Chrome"
+  },
+  "toggleTheme": {
+    "message": "Alternar tema"
+  },
+  "searchTitle": {
+    "message": "Pesquisar"
+  },
+  "capturePlaceholder": {
+    "message": "ex.: Ctrl + K (pode digitar)"
+  },
+  "captureTitle": {
+    "message": "Pressione as teclas para gravar"
+  },
+  "record": {
+    "message": "Gravar"
+  },
+  "recording": {
+    "message": "Gravando…"
+  },
+  "labelPlaceholder": {
+    "message": "Rótulo (opcional)"
+  },
+  "add": {
+    "message": "Adicionar"
+  },
+  "cancel": {
+    "message": "Cancelar"
+  },
+  "catAll": {
+    "message": "Todos"
+  },
+  "catNav": {
+    "message": "Naveg."
+  },
+  "catEdit": {
+    "message": "Editar"
+  },
+  "catTab": {
+    "message": "Abas"
+  },
+  "catDev": {
+    "message": "Dev"
+  },
+  "catCustom": {
+    "message": "Personal."
+  },
+  "searchPlaceholder": {
+    "message": "Pesquisar atalhos"
+  },
+  "searchAddPlaceholder": {
+    "message": "Pesquisar / adicionar (ex.: Ctrl+K)"
+  },
+  "guideTitle": {
+    "message": "Como registrar um atalho"
+  },
+  "guideStep1": {
+    "message": "Clique em \"Abrir página de configurações\" abaixo"
+  },
+  "guideStep2": {
+    "message": "Encontre \"Shortcut Blocker\" na lista"
+  },
+  "guideStep4": {
+    "message": "Pressione as teclas para gravá-las"
+  },
+  "guideRowDefault": {
+    "message": "Clique na caixa de entrada da linha correspondente"
+  },
+  "guideNote": {
+    "message": "Uma vez registrada, a tecla é vinculada a um comando vazio e desativada."
+  },
+  "openSettingsPage": {
+    "message": "Abrir página de configurações"
+  },
+  "close": {
+    "message": "Fechar"
+  },
+  "guideTargetFmt": {
+    "message": "Alvo: $label$ ($combo$)",
+    "placeholders": {
+      "label": {
+        "content": "$1"
+      },
+      "combo": {
+        "content": "$2"
+      }
+    }
+  },
+  "guideRowFmt": {
+    "message": "Clique na caixa de entrada da linha \"Bloquear: $row$\"",
+    "placeholders": {
+      "row": {
+        "content": "$1"
+      }
+    }
+  },
+  "bulkLabel": {
+    "message": "Esta aba:"
+  },
+  "disableAll": {
+    "message": "Desativar tudo"
+  },
+  "enableAll": {
+    "message": "Ativar tudo"
+  },
+  "addCustom": {
+    "message": "+ Adicionar atalho personalizado"
+  },
+  "disableFmt": {
+    "message": "Desativar $name$",
+    "placeholders": {
+      "name": {
+        "content": "$1"
+      }
+    }
+  },
+  "noteCommand": {
+    "message": "Registre na página de atalhos de teclado à direita"
+  },
+  "noteUnblockable": {
+    "message": "Não pode ser bloqueado (restrição do navegador)"
+  },
+  "gearTitle": {
+    "message": "Registrar na página de atalhos do Chrome"
+  },
+  "lockTitle": {
+    "message": "Não pode ser bloqueado (restrição do navegador)"
+  },
+  "delete": {
+    "message": "Excluir"
+  },
+  "statusDisabled": {
+    "message": "$count$ atalho(s) desativado(s)",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "statusAllEnabled": {
+    "message": "Todos os atalhos ativados"
+  },
+  "sc_nav_back": {
+    "message": "Voltar"
+  },
+  "sc_nav_forward": {
+    "message": "Avançar"
+  },
+  "sc_nav_reload": {
+    "message": "Recarregar página"
+  },
+  "sc_nav_hard_reload": {
+    "message": "Recarga forçada (limpar cache)"
+  },
+  "sc_nav_home": {
+    "message": "Página inicial"
+  },
+  "sc_nav_stop": {
+    "message": "Parar carregamento"
+  },
+  "sc_nav_scrolldown": {
+    "message": "Página abaixo"
+  },
+  "sc_nav_scrollup": {
+    "message": "Página acima"
+  },
+  "sc_nav_top": {
+    "message": "Início da página"
+  },
+  "sc_nav_bottom": {
+    "message": "Fim da página"
+  },
+  "sc_edit_copy": {
+    "message": "Copiar"
+  },
+  "sc_edit_cut": {
+    "message": "Recortar"
+  },
+  "sc_edit_paste": {
+    "message": "Colar"
+  },
+  "sc_edit_undo": {
+    "message": "Desfazer"
+  },
+  "sc_edit_redo": {
+    "message": "Refazer"
+  },
+  "sc_edit_selectall": {
+    "message": "Selecionar tudo"
+  },
+  "sc_edit_find": {
+    "message": "Localizar"
+  },
+  "sc_edit_findnext": {
+    "message": "Localizar próxima"
+  },
+  "sc_edit_save": {
+    "message": "Salvar página"
+  },
+  "sc_edit_print": {
+    "message": "Imprimir"
+  },
+  "sc_tab_new": {
+    "message": "Nova aba"
+  },
+  "sc_tab_close": {
+    "message": "Fechar aba"
+  },
+  "sc_tab_reopen": {
+    "message": "Reabrir aba fechada"
+  },
+  "sc_tab_next": {
+    "message": "Próxima aba"
+  },
+  "sc_tab_prev": {
+    "message": "Aba anterior"
+  },
+  "sc_tab_1": {
+    "message": "Ir para a aba 1"
+  },
+  "sc_tab_9": {
+    "message": "Ir para a última aba"
+  },
+  "sc_tab_newwindow": {
+    "message": "Nova janela"
+  },
+  "sc_tab_incognito": {
+    "message": "Janela anônima"
+  },
+  "sc_dev_tools": {
+    "message": "Ferramentas do desenvolvedor"
+  },
+  "sc_dev_tools2": {
+    "message": "Ferramentas do desenvolvedor"
+  },
+  "sc_dev_console": {
+    "message": "Console"
+  },
+  "sc_dev_source": {
+    "message": "Ver código-fonte"
+  },
+  "sc_dev_inspect": {
+    "message": "Inspecionar elemento"
+  },
+  "cmd_block_nav_back": {
+    "message": "Bloquear: Voltar (Alt+←)"
+  },
+  "cmd_block_nav_forward": {
+    "message": "Bloquear: Avançar (Alt+→)"
+  },
+  "cmd_block_nav_reload": {
+    "message": "Bloquear: Recarregar página (Ctrl+R)"
+  },
+  "cmd_block_nav_hard_reload": {
+    "message": "Bloquear: Recarga forçada (limpar cache) (Ctrl+Shift+R)"
+  },
+  "cmd_block_nav_home": {
+    "message": "Bloquear: Página inicial (Alt+Home)"
+  },
+  "cmd_block_tab_new": {
+    "message": "Bloquear: Nova aba (Ctrl+T)"
+  },
+  "cmd_block_tab_close": {
+    "message": "Bloquear: Fechar aba (Ctrl+W)"
+  },
+  "cmd_block_tab_reopen": {
+    "message": "Bloquear: Reabrir aba fechada (Ctrl+Shift+T)"
+  },
+  "cmd_block_tab_1": {
+    "message": "Bloquear: Ir para a aba 1 (Ctrl+1)"
+  },
+  "cmd_block_tab_9": {
+    "message": "Bloquear: Ir para a última aba (Ctrl+9)"
+  },
+  "cmd_block_tab_newwindow": {
+    "message": "Bloquear: Nova janela (Ctrl+N)"
+  },
+  "cmd_block_tab_incognito": {
+    "message": "Bloquear: Janela anônima (Ctrl+Shift+N)"
+  },
+  "cmd_block_dev_tools2": {
+    "message": "Bloquear: Ferramentas do desenvolvedor (Ctrl+Shift+I)"
+  },
+  "cmd_block_dev_console": {
+    "message": "Bloquear: Console (Ctrl+Shift+J)"
+  },
+  "cmd_block_dev_source": {
+    "message": "Bloquear: Ver código-fonte (Ctrl+U)"
+  },
+  "cmd_block_dev_inspect": {
+    "message": "Bloquear: Inspecionar elemento (Ctrl+Shift+C)"
+  }
+}

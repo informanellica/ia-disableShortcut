@@ -1,0 +1,301 @@
+{
+  "appName": {
+    "message": "Shortcut Blocker"
+  },
+  "appDesc": {
+    "message": "Activez ou désactivez des raccourcis clavier individuels — bloquez les Ctrl+W accidentels, la navigation par Retour arrière, F12, etc."
+  },
+  "openShortcutsTitle": {
+    "message": "Ouvrir la page des raccourcis clavier de Chrome"
+  },
+  "toggleTheme": {
+    "message": "Changer de thème"
+  },
+  "searchTitle": {
+    "message": "Rechercher"
+  },
+  "capturePlaceholder": {
+    "message": "ex. : Ctrl + K (saisie possible)"
+  },
+  "captureTitle": {
+    "message": "Appuyez sur les touches pour enregistrer"
+  },
+  "record": {
+    "message": "Enregistrer"
+  },
+  "recording": {
+    "message": "Enregistrement…"
+  },
+  "labelPlaceholder": {
+    "message": "Libellé (facultatif)"
+  },
+  "add": {
+    "message": "Ajouter"
+  },
+  "cancel": {
+    "message": "Annuler"
+  },
+  "catAll": {
+    "message": "Tous"
+  },
+  "catNav": {
+    "message": "Nav."
+  },
+  "catEdit": {
+    "message": "Édition"
+  },
+  "catTab": {
+    "message": "Onglets"
+  },
+  "catDev": {
+    "message": "Dév"
+  },
+  "catCustom": {
+    "message": "Perso"
+  },
+  "searchPlaceholder": {
+    "message": "Rechercher des raccourcis"
+  },
+  "searchAddPlaceholder": {
+    "message": "Rechercher / ajouter (ex. : Ctrl+K)"
+  },
+  "guideTitle": {
+    "message": "Comment enregistrer un raccourci"
+  },
+  "guideStep1": {
+    "message": "Cliquez sur « Ouvrir la page des paramètres » ci-dessous"
+  },
+  "guideStep2": {
+    "message": "Trouvez « Shortcut Blocker » dans la liste"
+  },
+  "guideStep4": {
+    "message": "Appuyez sur les touches pour les enregistrer"
+  },
+  "guideRowDefault": {
+    "message": "Cliquez dans le champ de la ligne concernée"
+  },
+  "guideNote": {
+    "message": "Une fois enregistrée, la touche est associée à une commande sans effet et désactivée."
+  },
+  "openSettingsPage": {
+    "message": "Ouvrir la page des paramètres"
+  },
+  "close": {
+    "message": "Fermer"
+  },
+  "guideTargetFmt": {
+    "message": "Cible : $label$ ($combo$)",
+    "placeholders": {
+      "label": {
+        "content": "$1"
+      },
+      "combo": {
+        "content": "$2"
+      }
+    }
+  },
+  "guideRowFmt": {
+    "message": "Cliquez dans le champ de la ligne « Bloquer : $row$ »",
+    "placeholders": {
+      "row": {
+        "content": "$1"
+      }
+    }
+  },
+  "bulkLabel": {
+    "message": "Cet onglet :"
+  },
+  "disableAll": {
+    "message": "Tout désactiver"
+  },
+  "enableAll": {
+    "message": "Tout activer"
+  },
+  "addCustom": {
+    "message": "+ Ajouter un raccourci personnalisé"
+  },
+  "disableFmt": {
+    "message": "Désactiver $name$",
+    "placeholders": {
+      "name": {
+        "content": "$1"
+      }
+    }
+  },
+  "noteCommand": {
+    "message": "Enregistrez depuis la page des raccourcis clavier à droite"
+  },
+  "noteUnblockable": {
+    "message": "Impossible à bloquer (restriction du navigateur)"
+  },
+  "gearTitle": {
+    "message": "Enregistrer sur la page des raccourcis de Chrome"
+  },
+  "lockTitle": {
+    "message": "Impossible à bloquer (restriction du navigateur)"
+  },
+  "delete": {
+    "message": "Supprimer"
+  },
+  "statusDisabled": {
+    "message": "$count$ raccourci(s) désactivé(s)",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "statusAllEnabled": {
+    "message": "Tous les raccourcis activés"
+  },
+  "sc_nav_back": {
+    "message": "Précédent"
+  },
+  "sc_nav_forward": {
+    "message": "Suivant"
+  },
+  "sc_nav_reload": {
+    "message": "Recharger la page"
+  },
+  "sc_nav_hard_reload": {
+    "message": "Rechargement forcé (vider le cache)"
+  },
+  "sc_nav_home": {
+    "message": "Page d'accueil"
+  },
+  "sc_nav_stop": {
+    "message": "Arrêter le chargement"
+  },
+  "sc_nav_scrolldown": {
+    "message": "Page suivante"
+  },
+  "sc_nav_scrollup": {
+    "message": "Page précédente"
+  },
+  "sc_nav_top": {
+    "message": "Haut de la page"
+  },
+  "sc_nav_bottom": {
+    "message": "Bas de la page"
+  },
+  "sc_edit_copy": {
+    "message": "Copier"
+  },
+  "sc_edit_cut": {
+    "message": "Couper"
+  },
+  "sc_edit_paste": {
+    "message": "Coller"
+  },
+  "sc_edit_undo": {
+    "message": "Annuler"
+  },
+  "sc_edit_redo": {
+    "message": "Rétablir"
+  },
+  "sc_edit_selectall": {
+    "message": "Tout sélectionner"
+  },
+  "sc_edit_find": {
+    "message": "Rechercher"
+  },
+  "sc_edit_findnext": {
+    "message": "Rechercher le suivant"
+  },
+  "sc_edit_save": {
+    "message": "Enregistrer la page"
+  },
+  "sc_edit_print": {
+    "message": "Imprimer"
+  },
+  "sc_tab_new": {
+    "message": "Nouvel onglet"
+  },
+  "sc_tab_close": {
+    "message": "Fermer l'onglet"
+  },
+  "sc_tab_reopen": {
+    "message": "Rouvrir l'onglet fermé"
+  },
+  "sc_tab_next": {
+    "message": "Onglet suivant"
+  },
+  "sc_tab_prev": {
+    "message": "Onglet précédent"
+  },
+  "sc_tab_1": {
+    "message": "Aller à l'onglet 1"
+  },
+  "sc_tab_9": {
+    "message": "Aller au dernier onglet"
+  },
+  "sc_tab_newwindow": {
+    "message": "Nouvelle fenêtre"
+  },
+  "sc_tab_incognito": {
+    "message": "Fenêtre de navigation privée"
+  },
+  "sc_dev_tools": {
+    "message": "Outils de développement"
+  },
+  "sc_dev_tools2": {
+    "message": "Outils de développement"
+  },
+  "sc_dev_console": {
+    "message": "Console"
+  },
+  "sc_dev_source": {
+    "message": "Afficher la source"
+  },
+  "sc_dev_inspect": {
+    "message": "Inspecter l'élément"
+  },
+  "cmd_block_nav_back": {
+    "message": "Bloquer: Précédent (Alt+←)"
+  },
+  "cmd_block_nav_forward": {
+    "message": "Bloquer: Suivant (Alt+→)"
+  },
+  "cmd_block_nav_reload": {
+    "message": "Bloquer: Recharger la page (Ctrl+R)"
+  },
+  "cmd_block_nav_hard_reload": {
+    "message": "Bloquer: Rechargement forcé (vider le cache) (Ctrl+Shift+R)"
+  },
+  "cmd_block_nav_home": {
+    "message": "Bloquer: Page d'accueil (Alt+Home)"
+  },
+  "cmd_block_tab_new": {
+    "message": "Bloquer: Nouvel onglet (Ctrl+T)"
+  },
+  "cmd_block_tab_close": {
+    "message": "Bloquer: Fermer l'onglet (Ctrl+W)"
+  },
+  "cmd_block_tab_reopen": {
+    "message": "Bloquer: Rouvrir l'onglet fermé (Ctrl+Shift+T)"
+  },
+  "cmd_block_tab_1": {
+    "message": "Bloquer: Aller à l'onglet 1 (Ctrl+1)"
+  },
+  "cmd_block_tab_9": {
+    "message": "Bloquer: Aller au dernier onglet (Ctrl+9)"
+  },
+  "cmd_block_tab_newwindow": {
+    "message": "Bloquer: Nouvelle fenêtre (Ctrl+N)"
+  },
+  "cmd_block_tab_incognito": {
+    "message": "Bloquer: Fenêtre de navigation privée (Ctrl+Shift+N)"
+  },
+  "cmd_block_dev_tools2": {
+    "message": "Bloquer: Outils de développement (Ctrl+Shift+I)"
+  },
+  "cmd_block_dev_console": {
+    "message": "Bloquer: Console (Ctrl+Shift+J)"
+  },
+  "cmd_block_dev_source": {
+    "message": "Bloquer: Afficher la source (Ctrl+U)"
+  },
+  "cmd_block_dev_inspect": {
+    "message": "Bloquer: Inspecter l'élément (Ctrl+Shift+C)"
+  }
+}

@@ -1,0 +1,301 @@
+{
+  "appName": {
+    "message": "Shortcut Blocker"
+  },
+  "appDesc": {
+    "message": "Aktiviere oder deaktiviere einzelne Tastenkürzel beim Surfen — blockiere versehentliches Strg+W, Rücktaste-Navigation, F12 und mehr."
+  },
+  "openShortcutsTitle": {
+    "message": "Chrome-Tastenkürzelseite öffnen"
+  },
+  "toggleTheme": {
+    "message": "Design wechseln"
+  },
+  "searchTitle": {
+    "message": "Suchen"
+  },
+  "capturePlaceholder": {
+    "message": "z. B. Strg + K (Eingabe möglich)"
+  },
+  "captureTitle": {
+    "message": "Tasten drücken zum Aufzeichnen"
+  },
+  "record": {
+    "message": "Aufzeichnen"
+  },
+  "recording": {
+    "message": "Aufzeichnung…"
+  },
+  "labelPlaceholder": {
+    "message": "Bezeichnung (optional)"
+  },
+  "add": {
+    "message": "Hinzufügen"
+  },
+  "cancel": {
+    "message": "Abbrechen"
+  },
+  "catAll": {
+    "message": "Alle"
+  },
+  "catNav": {
+    "message": "Nav."
+  },
+  "catEdit": {
+    "message": "Bearb."
+  },
+  "catTab": {
+    "message": "Tabs"
+  },
+  "catDev": {
+    "message": "Dev"
+  },
+  "catCustom": {
+    "message": "Eigene"
+  },
+  "searchPlaceholder": {
+    "message": "Tastenkürzel suchen"
+  },
+  "searchAddPlaceholder": {
+    "message": "Suchen / hinzufügen (z. B. Strg+K)"
+  },
+  "guideTitle": {
+    "message": "Tastenkürzel registrieren"
+  },
+  "guideStep1": {
+    "message": "Klicke unten auf „Einstellungsseite öffnen“"
+  },
+  "guideStep2": {
+    "message": "Finde „Shortcut Blocker“ in der Liste"
+  },
+  "guideStep4": {
+    "message": "Drücke die Tasten zum Aufzeichnen"
+  },
+  "guideRowDefault": {
+    "message": "Klicke in das Eingabefeld der betreffenden Zeile"
+  },
+  "guideNote": {
+    "message": "Nach der Registrierung wird die Taste einem leeren Befehl zugewiesen und deaktiviert."
+  },
+  "openSettingsPage": {
+    "message": "Einstellungsseite öffnen"
+  },
+  "close": {
+    "message": "Schließen"
+  },
+  "guideTargetFmt": {
+    "message": "Ziel: $label$ ($combo$)",
+    "placeholders": {
+      "label": {
+        "content": "$1"
+      },
+      "combo": {
+        "content": "$2"
+      }
+    }
+  },
+  "guideRowFmt": {
+    "message": "Klicke in das Eingabefeld der Zeile „Blockieren: $row$“",
+    "placeholders": {
+      "row": {
+        "content": "$1"
+      }
+    }
+  },
+  "bulkLabel": {
+    "message": "Dieser Tab:"
+  },
+  "disableAll": {
+    "message": "Alle deaktivieren"
+  },
+  "enableAll": {
+    "message": "Alle aktivieren"
+  },
+  "addCustom": {
+    "message": "+ Eigenes Tastenkürzel hinzufügen"
+  },
+  "disableFmt": {
+    "message": "$name$ deaktivieren",
+    "placeholders": {
+      "name": {
+        "content": "$1"
+      }
+    }
+  },
+  "noteCommand": {
+    "message": "Über die Tastenkürzelseite rechts registrieren"
+  },
+  "noteUnblockable": {
+    "message": "Kann nicht blockiert werden (Browser-Einschränkung)"
+  },
+  "gearTitle": {
+    "message": "Auf Chrome-Tastenkürzelseite registrieren"
+  },
+  "lockTitle": {
+    "message": "Kann nicht blockiert werden (Browser-Einschränkung)"
+  },
+  "delete": {
+    "message": "Löschen"
+  },
+  "statusDisabled": {
+    "message": "$count$ Tastenkürzel deaktiviert",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "statusAllEnabled": {
+    "message": "Alle Tastenkürzel aktiviert"
+  },
+  "sc_nav_back": {
+    "message": "Zurück"
+  },
+  "sc_nav_forward": {
+    "message": "Vorwärts"
+  },
+  "sc_nav_reload": {
+    "message": "Seite neu laden"
+  },
+  "sc_nav_hard_reload": {
+    "message": "Neu laden (Cache leeren)"
+  },
+  "sc_nav_home": {
+    "message": "Startseite"
+  },
+  "sc_nav_stop": {
+    "message": "Laden beenden"
+  },
+  "sc_nav_scrolldown": {
+    "message": "Seite nach unten"
+  },
+  "sc_nav_scrollup": {
+    "message": "Seite nach oben"
+  },
+  "sc_nav_top": {
+    "message": "Seitenanfang"
+  },
+  "sc_nav_bottom": {
+    "message": "Seitenende"
+  },
+  "sc_edit_copy": {
+    "message": "Kopieren"
+  },
+  "sc_edit_cut": {
+    "message": "Ausschneiden"
+  },
+  "sc_edit_paste": {
+    "message": "Einfügen"
+  },
+  "sc_edit_undo": {
+    "message": "Rückgängig"
+  },
+  "sc_edit_redo": {
+    "message": "Wiederholen"
+  },
+  "sc_edit_selectall": {
+    "message": "Alles auswählen"
+  },
+  "sc_edit_find": {
+    "message": "Suchen"
+  },
+  "sc_edit_findnext": {
+    "message": "Weitersuchen"
+  },
+  "sc_edit_save": {
+    "message": "Seite speichern"
+  },
+  "sc_edit_print": {
+    "message": "Drucken"
+  },
+  "sc_tab_new": {
+    "message": "Neuer Tab"
+  },
+  "sc_tab_close": {
+    "message": "Tab schließen"
+  },
+  "sc_tab_reopen": {
+    "message": "Geschlossenen Tab öffnen"
+  },
+  "sc_tab_next": {
+    "message": "Nächster Tab"
+  },
+  "sc_tab_prev": {
+    "message": "Vorheriger Tab"
+  },
+  "sc_tab_1": {
+    "message": "Zu Tab 1 wechseln"
+  },
+  "sc_tab_9": {
+    "message": "Zum letzten Tab"
+  },
+  "sc_tab_newwindow": {
+    "message": "Neues Fenster"
+  },
+  "sc_tab_incognito": {
+    "message": "Inkognitofenster"
+  },
+  "sc_dev_tools": {
+    "message": "Entwicklertools"
+  },
+  "sc_dev_tools2": {
+    "message": "Entwicklertools"
+  },
+  "sc_dev_console": {
+    "message": "Konsole"
+  },
+  "sc_dev_source": {
+    "message": "Quelltext anzeigen"
+  },
+  "sc_dev_inspect": {
+    "message": "Element untersuchen"
+  },
+  "cmd_block_nav_back": {
+    "message": "Blockieren: Zurück (Alt+←)"
+  },
+  "cmd_block_nav_forward": {
+    "message": "Blockieren: Vorwärts (Alt+→)"
+  },
+  "cmd_block_nav_reload": {
+    "message": "Blockieren: Seite neu laden (Ctrl+R)"
+  },
+  "cmd_block_nav_hard_reload": {
+    "message": "Blockieren: Neu laden (Cache leeren) (Ctrl+Shift+R)"
+  },
+  "cmd_block_nav_home": {
+    "message": "Blockieren: Startseite (Alt+Home)"
+  },
+  "cmd_block_tab_new": {
+    "message": "Blockieren: Neuer Tab (Ctrl+T)"
+  },
+  "cmd_block_tab_close": {
+    "message": "Blockieren: Tab schließen (Ctrl+W)"
+  },
+  "cmd_block_tab_reopen": {
+    "message": "Blockieren: Geschlossenen Tab öffnen (Ctrl+Shift+T)"
+  },
+  "cmd_block_tab_1": {
+    "message": "Blockieren: Zu Tab 1 wechseln (Ctrl+1)"
+  },
+  "cmd_block_tab_9": {
+    "message": "Blockieren: Zum letzten Tab (Ctrl+9)"
+  },
+  "cmd_block_tab_newwindow": {
+    "message": "Blockieren: Neues Fenster (Ctrl+N)"
+  },
+  "cmd_block_tab_incognito": {
+    "message": "Blockieren: Inkognitofenster (Ctrl+Shift+N)"
+  },
+  "cmd_block_dev_tools2": {
+    "message": "Blockieren: Entwicklertools (Ctrl+Shift+I)"
+  },
+  "cmd_block_dev_console": {
+    "message": "Blockieren: Konsole (Ctrl+Shift+J)"
+  },
+  "cmd_block_dev_source": {
+    "message": "Blockieren: Quelltext anzeigen (Ctrl+U)"
+  },
+  "cmd_block_dev_inspect": {
+    "message": "Blockieren: Element untersuchen (Ctrl+Shift+C)"
+  }
+}

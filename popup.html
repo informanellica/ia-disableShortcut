@@ -6,56 +6,56 @@
 </head>
 <body class="theme-light">
   <div class="header">
-    <h1>Shortcut Blocker</h1>
+    <h1 data-i18n="appName">Shortcut Blocker</h1>
     <div class="header-actions">
-      <button id="openShortcuts" class="btn-theme" title="Chrome のショートカット設定を開く"></button>
-      <button id="themeToggle" class="btn-theme" title="テーマ切替"></button>
-      <button id="toggleSearch" class="btn-theme" title="検索"></button>
+      <button id="openShortcuts" class="btn-theme" title="Chrome のショートカット設定を開く" data-i18n-title="openShortcutsTitle"></button>
+      <button id="themeToggle" class="btn-theme" title="テーマ切替" data-i18n-title="toggleTheme"></button>
+      <button id="toggleSearch" class="btn-theme" title="検索" data-i18n-title="searchTitle"></button>
     </div>
   </div>
 
   <div id="customForm" class="custom-form hidden">
     <div class="capture-area">
-      <input id="captureInput" type="text" placeholder="例: Ctrl + K（直接入力可）">
-      <button id="captureToggle" class="btn-capture" title="キーを押して記録">記録</button>
+      <input id="captureInput" type="text" placeholder="例: Ctrl + K（直接入力可）" data-i18n-placeholder="capturePlaceholder">
+      <button id="captureToggle" class="btn-capture" title="キーを押して記録" data-i18n="record" data-i18n-title="captureTitle">記録</button>
     </div>
-    <input id="customLabel" type="text" class="custom-input" placeholder="ラベル (任意)">
+    <input id="customLabel" type="text" class="custom-input" placeholder="ラベル (任意)" data-i18n-placeholder="labelPlaceholder">
     <div class="form-actions">
-      <button id="saveCustom" class="btn-save">追加</button>
-      <button id="cancelCustom" class="btn-cancel">キャンセル</button>
+      <button id="saveCustom" class="btn-save" data-i18n="add">追加</button>
+      <button id="cancelCustom" class="btn-cancel" data-i18n="cancel">キャンセル</button>
     </div>
   </div>
 
   <div class="category-tabs">
-    <button class="tab active" data-category="all">全て</button>
-    <button class="tab" data-category="navigation">ナビ</button>
-    <button class="tab" data-category="editing">編集</button>
-    <button class="tab" data-category="tab">タブ</button>
-    <button class="tab" data-category="dev">開発</button>
-    <button class="tab" data-category="custom">カスタム</button>
+    <button class="tab active" data-category="all" data-i18n="catAll">全て</button>
+    <button class="tab" data-category="navigation" data-i18n="catNav">ナビ</button>
+    <button class="tab" data-category="editing" data-i18n="catEdit">編集</button>
+    <button class="tab" data-category="tab" data-i18n="catTab">タブ</button>
+    <button class="tab" data-category="dev" data-i18n="catDev">開発</button>
+    <button class="tab" data-category="custom" data-i18n="catCustom">カスタム</button>
   </div>
 
   <div id="searchBar" class="search-bar hidden">
-    <input id="searchInput" type="text" placeholder="ショートカットを検索">
-    <button id="searchAdd" class="btn-capture hidden" type="button">追加</button>
+    <input id="searchInput" type="text" placeholder="ショートカットを検索" data-i18n-placeholder="searchPlaceholder">
+    <button id="searchAdd" class="btn-capture hidden" type="button" data-i18n="add">追加</button>
   </div>
 
   <ul id="shortcutList" class="shortcut-list"></ul>
 
   <div id="guideOverlay" class="guide-overlay hidden">
     <div class="guide-card">
-      <div class="guide-title">ショートカット登録の手順</div>
+      <div class="guide-title" data-i18n="guideTitle">ショートカット登録の手順</div>
       <p class="guide-target" id="guideTarget"></p>
       <ol class="guide-steps">
-        <li>下の「設定ページを開く」を押す</li>
-        <li>一覧から <b>「Shortcut Blocker」</b> を探す</li>
-        <li id="guideRow">対象の欄の入力ボックスをクリック</li>
-        <li>キーを実際に押して記録する</li>
+        <li data-i18n="guideStep1">下の「設定ページを開く」を押す</li>
+        <li data-i18n="guideStep2">一覧から「Shortcut Blocker」を探す</li>
+        <li id="guideRow" data-i18n="guideRowDefault">対象の欄の入力ボックスをクリック</li>
+        <li data-i18n="guideStep4">キーを実際に押して記録する</li>
       </ol>
-      <p class="guide-note">登録すると、そのキーは何もしないコマンドに割り当てられ無効化されます。</p>
+      <p class="guide-note" data-i18n="guideNote">登録すると、そのキーは何もしないコマンドに割り当てられ無効化されます。</p>
       <div class="guide-actions">
-        <button id="guideOpen" class="btn-save" type="button">設定ページを開く</button>
-        <button id="guideClose" class="btn-cancel" type="button">閉じる</button>
+        <button id="guideOpen" class="btn-save" type="button" data-i18n="openSettingsPage">設定ページを開く</button>
+        <button id="guideClose" class="btn-cancel" type="button" data-i18n="close">閉じる</button>
       </div>
     </div>
   </div>

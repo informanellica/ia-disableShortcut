@@ -16,7 +16,8 @@ $include = @(
   'popup.css',
   'popup.html',
   'popup.js',
-  'icons'
+  'icons',
+  '_locales'
 )
 # Glob patterns to drop from the staged copy before zipping.
 $exclude = @('*.svg')

@@ -1,0 +1,301 @@
+{
+  "appName": {
+    "message": "Shortcut Blocker"
+  },
+  "appDesc": {
+    "message": "浏览时逐个开启或关闭键盘快捷键——屏蔽误触的 Ctrl+W、退格键导航、F12 等。"
+  },
+  "openShortcutsTitle": {
+    "message": "打开 Chrome 的键盘快捷键页面"
+  },
+  "toggleTheme": {
+    "message": "切换主题"
+  },
+  "searchTitle": {
+    "message": "搜索"
+  },
+  "capturePlaceholder": {
+    "message": "例如 Ctrl + K（可直接输入）"
+  },
+  "captureTitle": {
+    "message": "按下按键以记录"
+  },
+  "record": {
+    "message": "记录"
+  },
+  "recording": {
+    "message": "记录中…"
+  },
+  "labelPlaceholder": {
+    "message": "标签（可选）"
+  },
+  "add": {
+    "message": "添加"
+  },
+  "cancel": {
+    "message": "取消"
+  },
+  "catAll": {
+    "message": "全部"
+  },
+  "catNav": {
+    "message": "导航"
+  },
+  "catEdit": {
+    "message": "编辑"
+  },
+  "catTab": {
+    "message": "标签页"
+  },
+  "catDev": {
+    "message": "开发"
+  },
+  "catCustom": {
+    "message": "自定义"
+  },
+  "searchPlaceholder": {
+    "message": "搜索快捷键"
+  },
+  "searchAddPlaceholder": {
+    "message": "搜索 / 添加（例如 Ctrl+K）"
+  },
+  "guideTitle": {
+    "message": "如何注册快捷键"
+  },
+  "guideStep1": {
+    "message": "点击下方的“打开设置页面”"
+  },
+  "guideStep2": {
+    "message": "在列表中找到“Shortcut Blocker”"
+  },
+  "guideStep4": {
+    "message": "按下按键进行记录"
+  },
+  "guideRowDefault": {
+    "message": "点击对应行的输入框"
+  },
+  "guideNote": {
+    "message": "注册后，该按键会被绑定到一个空命令并被禁用。"
+  },
+  "openSettingsPage": {
+    "message": "打开设置页面"
+  },
+  "close": {
+    "message": "关闭"
+  },
+  "guideTargetFmt": {
+    "message": "目标：$label$（$combo$）",
+    "placeholders": {
+      "label": {
+        "content": "$1"
+      },
+      "combo": {
+        "content": "$2"
+      }
+    }
+  },
+  "guideRowFmt": {
+    "message": "点击“屏蔽: $row$”这一行的输入框",
+    "placeholders": {
+      "row": {
+        "content": "$1"
+      }
+    }
+  },
+  "bulkLabel": {
+    "message": "此标签页："
+  },
+  "disableAll": {
+    "message": "全部禁用"
+  },
+  "enableAll": {
+    "message": "全部启用"
+  },
+  "addCustom": {
+    "message": "＋ 添加自定义快捷键"
+  },
+  "disableFmt": {
+    "message": "禁用 $name$",
+    "placeholders": {
+      "name": {
+        "content": "$1"
+      }
+    }
+  },
+  "noteCommand": {
+    "message": "请在右侧的键盘快捷键设置中注册"
+  },
+  "noteUnblockable": {
+    "message": "因浏览器限制无法屏蔽"
+  },
+  "gearTitle": {
+    "message": "在 Chrome 快捷键页面注册"
+  },
+  "lockTitle": {
+    "message": "因浏览器限制无法屏蔽"
+  },
+  "delete": {
+    "message": "删除"
+  },
+  "statusDisabled": {
+    "message": "已禁用 $count$ 个快捷键",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "statusAllEnabled": {
+    "message": "所有快捷键已启用"
+  },
+  "sc_nav_back": {
+    "message": "后退"
+  },
+  "sc_nav_forward": {
+    "message": "前进"
+  },
+  "sc_nav_reload": {
+    "message": "重新加载页面"
+  },
+  "sc_nav_hard_reload": {
+    "message": "强制重新加载（清除缓存）"
+  },
+  "sc_nav_home": {
+    "message": "主页"
+  },
+  "sc_nav_stop": {
+    "message": "停止加载"
+  },
+  "sc_nav_scrolldown": {
+    "message": "向下翻页"
+  },
+  "sc_nav_scrollup": {
+    "message": "向上翻页"
+  },
+  "sc_nav_top": {
+    "message": "页首"
+  },
+  "sc_nav_bottom": {
+    "message": "页尾"
+  },
+  "sc_edit_copy": {
+    "message": "复制"
+  },
+  "sc_edit_cut": {
+    "message": "剪切"
+  },
+  "sc_edit_paste": {
+    "message": "粘贴"
+  },
+  "sc_edit_undo": {
+    "message": "撤销"
+  },
+  "sc_edit_redo": {
+    "message": "重做"
+  },
+  "sc_edit_selectall": {
+    "message": "全选"
+  },
+  "sc_edit_find": {
+    "message": "查找"
+  },
+  "sc_edit_findnext": {
+    "message": "查找下一个"
+  },
+  "sc_edit_save": {
+    "message": "保存页面"
+  },
+  "sc_edit_print": {
+    "message": "打印"
+  },
+  "sc_tab_new": {
+    "message": "新建标签页"
+  },
+  "sc_tab_close": {
+    "message": "关闭标签页"
+  },
+  "sc_tab_reopen": {
+    "message": "重新打开已关闭标签页"
+  },
+  "sc_tab_next": {
+    "message": "下一个标签页"
+  },
+  "sc_tab_prev": {
+    "message": "上一个标签页"
+  },
+  "sc_tab_1": {
+    "message": "切换到标签页 1"
+  },
+  "sc_tab_9": {
+    "message": "切换到最后一个标签页"
+  },
+  "sc_tab_newwindow": {
+    "message": "新建窗口"
+  },
+  "sc_tab_incognito": {
+    "message": "无痕窗口"
+  },
+  "sc_dev_tools": {
+    "message": "开发者工具"
+  },
+  "sc_dev_tools2": {
+    "message": "开发者工具"
+  },
+  "sc_dev_console": {
+    "message": "控制台"
+  },
+  "sc_dev_source": {
+    "message": "查看源代码"
+  },
+  "sc_dev_inspect": {
+    "message": "检查元素"
+  },
+  "cmd_block_nav_back": {
+    "message": "屏蔽: 后退 (Alt+←)"
+  },
+  "cmd_block_nav_forward": {
+    "message": "屏蔽: 前进 (Alt+→)"
+  },
+  "cmd_block_nav_reload": {
+    "message": "屏蔽: 重新加载页面 (Ctrl+R)"
+  },
+  "cmd_block_nav_hard_reload": {
+    "message": "屏蔽: 强制重新加载（清除缓存） (Ctrl+Shift+R)"
+  },
+  "cmd_block_nav_home": {
+    "message": "屏蔽: 主页 (Alt+Home)"
+  },
+  "cmd_block_tab_new": {
+    "message": "屏蔽: 新建标签页 (Ctrl+T)"
+  },
+  "cmd_block_tab_close": {
+    "message": "屏蔽: 关闭标签页 (Ctrl+W)"
+  },
+  "cmd_block_tab_reopen": {
+    "message": "屏蔽: 重新打开已关闭标签页 (Ctrl+Shift+T)"
+  },
+  "cmd_block_tab_1": {
+    "message": "屏蔽: 切换到标签页 1 (Ctrl+1)"
+  },
+  "cmd_block_tab_9": {
+    "message": "屏蔽: 切换到最后一个标签页 (Ctrl+9)"
+  },
+  "cmd_block_tab_newwindow": {
+    "message": "屏蔽: 新建窗口 (Ctrl+N)"
+  },
+  "cmd_block_tab_incognito": {
+    "message": "屏蔽: 无痕窗口 (Ctrl+Shift+N)"
+  },
+  "cmd_block_dev_tools2": {
+    "message": "屏蔽: 开发者工具 (Ctrl+Shift+I)"
+  },
+  "cmd_block_dev_console": {
+    "message": "屏蔽: 控制台 (Ctrl+Shift+J)"
+  },
+  "cmd_block_dev_source": {
+    "message": "屏蔽: 查看源代码 (Ctrl+U)"
+  },
+  "cmd_block_dev_inspect": {
+    "message": "屏蔽: 检查元素 (Ctrl+Shift+C)"
+  }
+}

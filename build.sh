@@ -17,6 +17,7 @@ include=(
   popup.html
   popup.js
   icons
+  _locales
 )
 # Filenames to drop from the staged copy before zipping.
 exclude=('*.svg')

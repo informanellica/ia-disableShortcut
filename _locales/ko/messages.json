@@ -1,0 +1,301 @@
+{
+  "appName": {
+    "message": "Shortcut Blocker"
+  },
+  "appDesc": {
+    "message": "브라우징 중 키보드 단축키를 개별적으로 켜고 끄세요 — 실수로 누르는 Ctrl+W, 백스페이스 탐색, F12 등을 차단합니다."
+  },
+  "openShortcutsTitle": {
+    "message": "Chrome 키보드 단축키 페이지 열기"
+  },
+  "toggleTheme": {
+    "message": "테마 전환"
+  },
+  "searchTitle": {
+    "message": "검색"
+  },
+  "capturePlaceholder": {
+    "message": "예: Ctrl + K (직접 입력 가능)"
+  },
+  "captureTitle": {
+    "message": "키를 눌러 기록"
+  },
+  "record": {
+    "message": "기록"
+  },
+  "recording": {
+    "message": "기록 중…"
+  },
+  "labelPlaceholder": {
+    "message": "라벨 (선택)"
+  },
+  "add": {
+    "message": "추가"
+  },
+  "cancel": {
+    "message": "취소"
+  },
+  "catAll": {
+    "message": "전체"
+  },
+  "catNav": {
+    "message": "탐색"
+  },
+  "catEdit": {
+    "message": "편집"
+  },
+  "catTab": {
+    "message": "탭"
+  },
+  "catDev": {
+    "message": "개발"
+  },
+  "catCustom": {
+    "message": "사용자"
+  },
+  "searchPlaceholder": {
+    "message": "단축키 검색"
+  },
+  "searchAddPlaceholder": {
+    "message": "검색 / 추가 (예: Ctrl+K)"
+  },
+  "guideTitle": {
+    "message": "단축키 등록 방법"
+  },
+  "guideStep1": {
+    "message": "아래의 \"설정 페이지 열기\"를 클릭"
+  },
+  "guideStep2": {
+    "message": "목록에서 \"Shortcut Blocker\" 찾기"
+  },
+  "guideStep4": {
+    "message": "키를 실제로 눌러 기록"
+  },
+  "guideRowDefault": {
+    "message": "해당 행의 입력란을 클릭"
+  },
+  "guideNote": {
+    "message": "등록하면 해당 키는 아무 동작도 하지 않는 명령에 할당되어 비활성화됩니다."
+  },
+  "openSettingsPage": {
+    "message": "설정 페이지 열기"
+  },
+  "close": {
+    "message": "닫기"
+  },
+  "guideTargetFmt": {
+    "message": "대상: $label$ ($combo$)",
+    "placeholders": {
+      "label": {
+        "content": "$1"
+      },
+      "combo": {
+        "content": "$2"
+      }
+    }
+  },
+  "guideRowFmt": {
+    "message": "\"차단: $row$\" 행의 입력란을 클릭",
+    "placeholders": {
+      "row": {
+        "content": "$1"
+      }
+    }
+  },
+  "bulkLabel": {
+    "message": "이 탭을:"
+  },
+  "disableAll": {
+    "message": "모두 비활성화"
+  },
+  "enableAll": {
+    "message": "모두 활성화"
+  },
+  "addCustom": {
+    "message": "＋ 사용자 단축키 추가"
+  },
+  "disableFmt": {
+    "message": "$name$ 비활성화",
+    "placeholders": {
+      "name": {
+        "content": "$1"
+      }
+    }
+  },
+  "noteCommand": {
+    "message": "오른쪽 키보드 단축키 설정에서 등록"
+  },
+  "noteUnblockable": {
+    "message": "브라우저 제약으로 차단 불가"
+  },
+  "gearTitle": {
+    "message": "Chrome 단축키 페이지에서 등록"
+  },
+  "lockTitle": {
+    "message": "브라우저 제약으로 차단 불가"
+  },
+  "delete": {
+    "message": "삭제"
+  },
+  "statusDisabled": {
+    "message": "$count$개의 단축키 비활성화됨",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "statusAllEnabled": {
+    "message": "모든 단축키 활성화됨"
+  },
+  "sc_nav_back": {
+    "message": "뒤로"
+  },
+  "sc_nav_forward": {
+    "message": "앞으로"
+  },
+  "sc_nav_reload": {
+    "message": "페이지 새로고침"
+  },
+  "sc_nav_hard_reload": {
+    "message": "강력 새로고침(캐시 지우기)"
+  },
+  "sc_nav_home": {
+    "message": "홈페이지"
+  },
+  "sc_nav_stop": {
+    "message": "로드 중지"
+  },
+  "sc_nav_scrolldown": {
+    "message": "페이지 다운"
+  },
+  "sc_nav_scrollup": {
+    "message": "페이지 업"
+  },
+  "sc_nav_top": {
+    "message": "페이지 맨 위"
+  },
+  "sc_nav_bottom": {
+    "message": "페이지 맨 아래"
+  },
+  "sc_edit_copy": {
+    "message": "복사"
+  },
+  "sc_edit_cut": {
+    "message": "잘라내기"
+  },
+  "sc_edit_paste": {
+    "message": "붙여넣기"
+  },
+  "sc_edit_undo": {
+    "message": "실행취소"
+  },
+  "sc_edit_redo": {
+    "message": "다시실행"
+  },
+  "sc_edit_selectall": {
+    "message": "모두 선택"
+  },
+  "sc_edit_find": {
+    "message": "찾기"
+  },
+  "sc_edit_findnext": {
+    "message": "다음 찾기"
+  },
+  "sc_edit_save": {
+    "message": "페이지 저장"
+  },
+  "sc_edit_print": {
+    "message": "인쇄"
+  },
+  "sc_tab_new": {
+    "message": "새 탭"
+  },
+  "sc_tab_close": {
+    "message": "탭 닫기"
+  },
+  "sc_tab_reopen": {
+    "message": "닫은 탭 다시 열기"
+  },
+  "sc_tab_next": {
+    "message": "다음 탭"
+  },
+  "sc_tab_prev": {
+    "message": "이전 탭"
+  },
+  "sc_tab_1": {
+    "message": "탭 1로 이동"
+  },
+  "sc_tab_9": {
+    "message": "마지막 탭으로 이동"
+  },
+  "sc_tab_newwindow": {
+    "message": "새 창"
+  },
+  "sc_tab_incognito": {
+    "message": "시크릿 창"
+  },
+  "sc_dev_tools": {
+    "message": "개발자 도구"
+  },
+  "sc_dev_tools2": {
+    "message": "개발자 도구"
+  },
+  "sc_dev_console": {
+    "message": "콘솔"
+  },
+  "sc_dev_source": {
+    "message": "소스 보기"
+  },
+  "sc_dev_inspect": {
+    "message": "요소 검사"
+  },
+  "cmd_block_nav_back": {
+    "message": "차단: 뒤로 (Alt+←)"
+  },
+  "cmd_block_nav_forward": {
+    "message": "차단: 앞으로 (Alt+→)"
+  },
+  "cmd_block_nav_reload": {
+    "message": "차단: 페이지 새로고침 (Ctrl+R)"
+  },
+  "cmd_block_nav_hard_reload": {
+    "message": "차단: 강력 새로고침(캐시 지우기) (Ctrl+Shift+R)"
+  },
+  "cmd_block_nav_home": {
+    "message": "차단: 홈페이지 (Alt+Home)"
+  },
+  "cmd_block_tab_new": {
+    "message": "차단: 새 탭 (Ctrl+T)"
+  },
+  "cmd_block_tab_close": {
+    "message": "차단: 탭 닫기 (Ctrl+W)"
+  },
+  "cmd_block_tab_reopen": {
+    "message": "차단: 닫은 탭 다시 열기 (Ctrl+Shift+T)"
+  },
+  "cmd_block_tab_1": {
+    "message": "차단: 탭 1로 이동 (Ctrl+1)"
+  },
+  "cmd_block_tab_9": {
+    "message": "차단: 마지막 탭으로 이동 (Ctrl+9)"
+  },
+  "cmd_block_tab_newwindow": {
+    "message": "차단: 새 창 (Ctrl+N)"
+  },
+  "cmd_block_tab_incognito": {
+    "message": "차단: 시크릿 창 (Ctrl+Shift+N)"
+  },
+  "cmd_block_dev_tools2": {
+    "message": "차단: 개발자 도구 (Ctrl+Shift+I)"
+  },
+  "cmd_block_dev_console": {
+    "message": "차단: 콘솔 (Ctrl+Shift+J)"
+  },
+  "cmd_block_dev_source": {
+    "message": "차단: 소스 보기 (Ctrl+U)"
+  },
+  "cmd_block_dev_inspect": {
+    "message": "차단: 요소 검사 (Ctrl+Shift+C)"
+  }
+}

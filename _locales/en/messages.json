@@ -1,0 +1,301 @@
+{
+  "appName": {
+    "message": "Shortcut Blocker"
+  },
+  "appDesc": {
+    "message": "Turn individual keyboard shortcuts on or off while browsing — block accidental Ctrl+W, Backspace navigation, F12, and more."
+  },
+  "openShortcutsTitle": {
+    "message": "Open Chrome's keyboard shortcuts page"
+  },
+  "toggleTheme": {
+    "message": "Toggle theme"
+  },
+  "searchTitle": {
+    "message": "Search"
+  },
+  "capturePlaceholder": {
+    "message": "e.g. Ctrl + K (you can type it)"
+  },
+  "captureTitle": {
+    "message": "Press keys to record"
+  },
+  "record": {
+    "message": "Record"
+  },
+  "recording": {
+    "message": "Recording…"
+  },
+  "labelPlaceholder": {
+    "message": "Label (optional)"
+  },
+  "add": {
+    "message": "Add"
+  },
+  "cancel": {
+    "message": "Cancel"
+  },
+  "catAll": {
+    "message": "All"
+  },
+  "catNav": {
+    "message": "Nav"
+  },
+  "catEdit": {
+    "message": "Edit"
+  },
+  "catTab": {
+    "message": "Tabs"
+  },
+  "catDev": {
+    "message": "Dev"
+  },
+  "catCustom": {
+    "message": "Custom"
+  },
+  "searchPlaceholder": {
+    "message": "Search shortcuts"
+  },
+  "searchAddPlaceholder": {
+    "message": "Search / add (e.g. Ctrl+K)"
+  },
+  "guideTitle": {
+    "message": "How to register a shortcut"
+  },
+  "guideStep1": {
+    "message": "Click \"Open settings page\" below"
+  },
+  "guideStep2": {
+    "message": "Find \"Shortcut Blocker\" in the list"
+  },
+  "guideStep4": {
+    "message": "Press the keys to record them"
+  },
+  "guideRowDefault": {
+    "message": "Click the input box for the target row"
+  },
+  "guideNote": {
+    "message": "Once registered, the key is bound to a do-nothing command and disabled."
+  },
+  "openSettingsPage": {
+    "message": "Open settings page"
+  },
+  "close": {
+    "message": "Close"
+  },
+  "guideTargetFmt": {
+    "message": "Target: $label$ ($combo$)",
+    "placeholders": {
+      "label": {
+        "content": "$1"
+      },
+      "combo": {
+        "content": "$2"
+      }
+    }
+  },
+  "guideRowFmt": {
+    "message": "Click the input box for the \"Block: $row$\" row",
+    "placeholders": {
+      "row": {
+        "content": "$1"
+      }
+    }
+  },
+  "bulkLabel": {
+    "message": "This tab:"
+  },
+  "disableAll": {
+    "message": "Disable all"
+  },
+  "enableAll": {
+    "message": "Enable all"
+  },
+  "addCustom": {
+    "message": "+ Add custom shortcut"
+  },
+  "disableFmt": {
+    "message": "Disable $name$",
+    "placeholders": {
+      "name": {
+        "content": "$1"
+      }
+    }
+  },
+  "noteCommand": {
+    "message": "Register from the keyboard shortcuts page on the right"
+  },
+  "noteUnblockable": {
+    "message": "Can't be blocked (browser restriction)"
+  },
+  "gearTitle": {
+    "message": "Register on Chrome's shortcuts page"
+  },
+  "lockTitle": {
+    "message": "Can't be blocked (browser restriction)"
+  },
+  "delete": {
+    "message": "Delete"
+  },
+  "statusDisabled": {
+    "message": "$count$ shortcut(s) disabled",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "statusAllEnabled": {
+    "message": "All shortcuts enabled"
+  },
+  "sc_nav_back": {
+    "message": "Back"
+  },
+  "sc_nav_forward": {
+    "message": "Forward"
+  },
+  "sc_nav_reload": {
+    "message": "Reload page"
+  },
+  "sc_nav_hard_reload": {
+    "message": "Hard reload (clear cache)"
+  },
+  "sc_nav_home": {
+    "message": "Home page"
+  },
+  "sc_nav_stop": {
+    "message": "Stop loading"
+  },
+  "sc_nav_scrolldown": {
+    "message": "Page down"
+  },
+  "sc_nav_scrollup": {
+    "message": "Page up"
+  },
+  "sc_nav_top": {
+    "message": "Top of page"
+  },
+  "sc_nav_bottom": {
+    "message": "Bottom of page"
+  },
+  "sc_edit_copy": {
+    "message": "Copy"
+  },
+  "sc_edit_cut": {
+    "message": "Cut"
+  },
+  "sc_edit_paste": {
+    "message": "Paste"
+  },
+  "sc_edit_undo": {
+    "message": "Undo"
+  },
+  "sc_edit_redo": {
+    "message": "Redo"
+  },
+  "sc_edit_selectall": {
+    "message": "Select all"
+  },
+  "sc_edit_find": {
+    "message": "Find"
+  },
+  "sc_edit_findnext": {
+    "message": "Find next"
+  },
+  "sc_edit_save": {
+    "message": "Save page"
+  },
+  "sc_edit_print": {
+    "message": "Print"
+  },
+  "sc_tab_new": {
+    "message": "New tab"
+  },
+  "sc_tab_close": {
+    "message": "Close tab"
+  },
+  "sc_tab_reopen": {
+    "message": "Reopen closed tab"
+  },
+  "sc_tab_next": {
+    "message": "Next tab"
+  },
+  "sc_tab_prev": {
+    "message": "Previous tab"
+  },
+  "sc_tab_1": {
+    "message": "Go to tab 1"
+  },
+  "sc_tab_9": {
+    "message": "Go to last tab"
+  },
+  "sc_tab_newwindow": {
+    "message": "New window"
+  },
+  "sc_tab_incognito": {
+    "message": "Incognito window"
+  },
+  "sc_dev_tools": {
+    "message": "Developer tools"
+  },
+  "sc_dev_tools2": {
+    "message": "Developer tools"
+  },
+  "sc_dev_console": {
+    "message": "Console"
+  },
+  "sc_dev_source": {
+    "message": "View source"
+  },
+  "sc_dev_inspect": {
+    "message": "Inspect element"
+  },
+  "cmd_block_nav_back": {
+    "message": "Block: Back (Alt+←)"
+  },
+  "cmd_block_nav_forward": {
+    "message": "Block: Forward (Alt+→)"
+  },
+  "cmd_block_nav_reload": {
+    "message": "Block: Reload page (Ctrl+R)"
+  },
+  "cmd_block_nav_hard_reload": {
+    "message": "Block: Hard reload (clear cache) (Ctrl+Shift+R)"
+  },
+  "cmd_block_nav_home": {
+    "message": "Block: Home page (Alt+Home)"
+  },
+  "cmd_block_tab_new": {
+    "message": "Block: New tab (Ctrl+T)"
+  },
+  "cmd_block_tab_close": {
+    "message": "Block: Close tab (Ctrl+W)"
+  },
+  "cmd_block_tab_reopen": {
+    "message": "Block: Reopen closed tab (Ctrl+Shift+T)"
+  },
+  "cmd_block_tab_1": {
+    "message": "Block: Go to tab 1 (Ctrl+1)"
+  },
+  "cmd_block_tab_9": {
+    "message": "Block: Go to last tab (Ctrl+9)"
+  },
+  "cmd_block_tab_newwindow": {
+    "message": "Block: New window (Ctrl+N)"
+  },
+  "cmd_block_tab_incognito": {
+    "message": "Block: Incognito window (Ctrl+Shift+N)"
+  },
+  "cmd_block_dev_tools2": {
+    "message": "Block: Developer tools (Ctrl+Shift+I)"
+  },
+  "cmd_block_dev_console": {
+    "message": "Block: Console (Ctrl+Shift+J)"
+  },
+  "cmd_block_dev_source": {
+    "message": "Block: View source (Ctrl+U)"
+  },
+  "cmd_block_dev_inspect": {
+    "message": "Block: Inspect element (Ctrl+Shift+C)"
+  }
+}

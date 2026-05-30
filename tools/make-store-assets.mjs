@@ -17,14 +17,15 @@ const OUT = path.join(ROOT, "dist", "store-assets");
 
 const CONFIG = {
   storeName: "Shortcut Blocker",
-  zip: "shortcut-blocker-v1.0.1.zip",
+  zip: "shortcut-blocker-v1.0.2.zip",
+  uiLocale: "ja",
   head: "邪魔なショートカットをオフ",
   sub: "誤操作の Ctrl+W や F12 をブロック。\n個別に有効 / 無効を選べます。",
   jp: true,
   privacy: "https://informanellica.github.io/ia-disableShortcut/PRIVACY",
   category: "Productivity / Accessibility",
   perms: "storage, host access (all sites)",
-  version: "1.0.1",
+  version: "1.0.2",
   summaryEN: "Turn individual keyboard shortcuts on or off while browsing — block accidental Ctrl+W, Backspace navigation, F12, and more.",
   summaryJA: "ブラウジング中のキーボードショートカットを個別にオン/オフ。誤操作の Ctrl+W、Backspace での戻る、F12 などをブロックできます。",
   homepage: "https://informanellica.com",
@@ -84,10 +85,16 @@ export async function generate(cfg, mock, root, out) {
   fs.writeFileSync(path.join(out, "_promo.html"), promo);
   fs.writeFileSync(path.join(out, "_tile.html"), tile);
 
+  // chrome.i18n mock so the real popup renders localized strings.
+  const msgsRaw = JSON.parse(fs.readFileSync(path.join(root, "_locales", cfg.uiLocale, "messages.json"), "utf8"));
+  const flat = {};
+  for (const k in msgsRaw) flat[k] = msgsRaw[k].message;
+  const i18nMock = `(()=>{const M=${JSON.stringify(flat)};window.chrome=window.chrome||{};window.chrome.i18n={getMessage:(k,subs)=>{let s=(M[k]||"");if(subs!=null){const a=[].concat(subs);let i=0;s=s.replace(/\\$\\w+\\$/g,()=>a[i++]??"");}return s;}};})();`;
+
   const browser = await chromium.launch({ channel: "chrome" });
   const ctx = await browser.newContext({ viewport: { width: 1280, height: 800 }, deviceScaleFactor: 1 });
   const page = await ctx.newPage();
-  await page.addInitScript({ content: mock });
+  await page.addInitScript({ content: mock + "\n" + i18nMock });
 
   await page.goto(pathToFileURL(path.join(out, "_promo.html")).href);
   await page.waitForTimeout(700);

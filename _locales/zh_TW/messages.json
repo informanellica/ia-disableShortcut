@@ -1,0 +1,301 @@
+{
+  "appName": {
+    "message": "Shortcut Blocker"
+  },
+  "appDesc": {
+    "message": "瀏覽時逐一開啟或關閉鍵盤快速鍵——封鎖誤觸的 Ctrl+W、退格鍵導覽、F12 等。"
+  },
+  "openShortcutsTitle": {
+    "message": "開啟 Chrome 的鍵盤快速鍵頁面"
+  },
+  "toggleTheme": {
+    "message": "切換主題"
+  },
+  "searchTitle": {
+    "message": "搜尋"
+  },
+  "capturePlaceholder": {
+    "message": "例如 Ctrl + K（可直接輸入）"
+  },
+  "captureTitle": {
+    "message": "按下按鍵以記錄"
+  },
+  "record": {
+    "message": "記錄"
+  },
+  "recording": {
+    "message": "記錄中…"
+  },
+  "labelPlaceholder": {
+    "message": "標籤（選填）"
+  },
+  "add": {
+    "message": "新增"
+  },
+  "cancel": {
+    "message": "取消"
+  },
+  "catAll": {
+    "message": "全部"
+  },
+  "catNav": {
+    "message": "導覽"
+  },
+  "catEdit": {
+    "message": "編輯"
+  },
+  "catTab": {
+    "message": "分頁"
+  },
+  "catDev": {
+    "message": "開發"
+  },
+  "catCustom": {
+    "message": "自訂"
+  },
+  "searchPlaceholder": {
+    "message": "搜尋快速鍵"
+  },
+  "searchAddPlaceholder": {
+    "message": "搜尋 / 新增（例如 Ctrl+K）"
+  },
+  "guideTitle": {
+    "message": "如何註冊快速鍵"
+  },
+  "guideStep1": {
+    "message": "點選下方的「開啟設定頁面」"
+  },
+  "guideStep2": {
+    "message": "在清單中找到「Shortcut Blocker」"
+  },
+  "guideStep4": {
+    "message": "按下按鍵進行記錄"
+  },
+  "guideRowDefault": {
+    "message": "點選對應列的輸入框"
+  },
+  "guideNote": {
+    "message": "註冊後，該按鍵會被指派到一個空指令並停用。"
+  },
+  "openSettingsPage": {
+    "message": "開啟設定頁面"
+  },
+  "close": {
+    "message": "關閉"
+  },
+  "guideTargetFmt": {
+    "message": "目標：$label$（$combo$）",
+    "placeholders": {
+      "label": {
+        "content": "$1"
+      },
+      "combo": {
+        "content": "$2"
+      }
+    }
+  },
+  "guideRowFmt": {
+    "message": "點選「封鎖: $row$」這一列的輸入框",
+    "placeholders": {
+      "row": {
+        "content": "$1"
+      }
+    }
+  },
+  "bulkLabel": {
+    "message": "此分頁："
+  },
+  "disableAll": {
+    "message": "全部停用"
+  },
+  "enableAll": {
+    "message": "全部啟用"
+  },
+  "addCustom": {
+    "message": "＋ 新增自訂快速鍵"
+  },
+  "disableFmt": {
+    "message": "停用 $name$",
+    "placeholders": {
+      "name": {
+        "content": "$1"
+      }
+    }
+  },
+  "noteCommand": {
+    "message": "請在右側的鍵盤快速鍵設定中註冊"
+  },
+  "noteUnblockable": {
+    "message": "因瀏覽器限制無法封鎖"
+  },
+  "gearTitle": {
+    "message": "在 Chrome 快速鍵頁面註冊"
+  },
+  "lockTitle": {
+    "message": "因瀏覽器限制無法封鎖"
+  },
+  "delete": {
+    "message": "刪除"
+  },
+  "statusDisabled": {
+    "message": "已停用 $count$ 個快速鍵",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "statusAllEnabled": {
+    "message": "所有快速鍵已啟用"
+  },
+  "sc_nav_back": {
+    "message": "上一頁"
+  },
+  "sc_nav_forward": {
+    "message": "下一頁"
+  },
+  "sc_nav_reload": {
+    "message": "重新整理頁面"
+  },
+  "sc_nav_hard_reload": {
+    "message": "強制重新整理（清除快取）"
+  },
+  "sc_nav_home": {
+    "message": "首頁"
+  },
+  "sc_nav_stop": {
+    "message": "停止載入"
+  },
+  "sc_nav_scrolldown": {
+    "message": "向下捲動一頁"
+  },
+  "sc_nav_scrollup": {
+    "message": "向上捲動一頁"
+  },
+  "sc_nav_top": {
+    "message": "頁面頂端"
+  },
+  "sc_nav_bottom": {
+    "message": "頁面底端"
+  },
+  "sc_edit_copy": {
+    "message": "複製"
+  },
+  "sc_edit_cut": {
+    "message": "剪下"
+  },
+  "sc_edit_paste": {
+    "message": "貼上"
+  },
+  "sc_edit_undo": {
+    "message": "復原"
+  },
+  "sc_edit_redo": {
+    "message": "重做"
+  },
+  "sc_edit_selectall": {
+    "message": "全選"
+  },
+  "sc_edit_find": {
+    "message": "尋找"
+  },
+  "sc_edit_findnext": {
+    "message": "尋找下一個"
+  },
+  "sc_edit_save": {
+    "message": "儲存頁面"
+  },
+  "sc_edit_print": {
+    "message": "列印"
+  },
+  "sc_tab_new": {
+    "message": "新增分頁"
+  },
+  "sc_tab_close": {
+    "message": "關閉分頁"
+  },
+  "sc_tab_reopen": {
+    "message": "重新開啟已關閉分頁"
+  },
+  "sc_tab_next": {
+    "message": "下一個分頁"
+  },
+  "sc_tab_prev": {
+    "message": "上一個分頁"
+  },
+  "sc_tab_1": {
+    "message": "切換到分頁 1"
+  },
+  "sc_tab_9": {
+    "message": "切換到最後一個分頁"
+  },
+  "sc_tab_newwindow": {
+    "message": "新增視窗"
+  },
+  "sc_tab_incognito": {
+    "message": "無痕視窗"
+  },
+  "sc_dev_tools": {
+    "message": "開發人員工具"
+  },
+  "sc_dev_tools2": {
+    "message": "開發人員工具"
+  },
+  "sc_dev_console": {
+    "message": "主控台"
+  },
+  "sc_dev_source": {
+    "message": "檢視原始碼"
+  },
+  "sc_dev_inspect": {
+    "message": "檢查元素"
+  },
+  "cmd_block_nav_back": {
+    "message": "封鎖: 上一頁 (Alt+←)"
+  },
+  "cmd_block_nav_forward": {
+    "message": "封鎖: 下一頁 (Alt+→)"
+  },
+  "cmd_block_nav_reload": {
+    "message": "封鎖: 重新整理頁面 (Ctrl+R)"
+  },
+  "cmd_block_nav_hard_reload": {
+    "message": "封鎖: 強制重新整理（清除快取） (Ctrl+Shift+R)"
+  },
+  "cmd_block_nav_home": {
+    "message": "封鎖: 首頁 (Alt+Home)"
+  },
+  "cmd_block_tab_new": {
+    "message": "封鎖: 新增分頁 (Ctrl+T)"
+  },
+  "cmd_block_tab_close": {
+    "message": "封鎖: 關閉分頁 (Ctrl+W)"
+  },
+  "cmd_block_tab_reopen": {
+    "message": "封鎖: 重新開啟已關閉分頁 (Ctrl+Shift+T)"
+  },
+  "cmd_block_tab_1": {
+    "message": "封鎖: 切換到分頁 1 (Ctrl+1)"
+  },
+  "cmd_block_tab_9": {
+    "message": "封鎖: 切換到最後一個分頁 (Ctrl+9)"
+  },
+  "cmd_block_tab_newwindow": {
+    "message": "封鎖: 新增視窗 (Ctrl+N)"
+  },
+  "cmd_block_tab_incognito": {
+    "message": "封鎖: 無痕視窗 (Ctrl+Shift+N)"
+  },
+  "cmd_block_dev_tools2": {
+    "message": "封鎖: 開發人員工具 (Ctrl+Shift+I)"
+  },
+  "cmd_block_dev_console": {
+    "message": "封鎖: 主控台 (Ctrl+Shift+J)"
+  },
+  "cmd_block_dev_source": {
+    "message": "封鎖: 檢視原始碼 (Ctrl+U)"
+  },
+  "cmd_block_dev_inspect": {
+    "message": "封鎖: 檢查元素 (Ctrl+Shift+C)"
+  }
+}

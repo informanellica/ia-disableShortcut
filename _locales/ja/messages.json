@@ -1,0 +1,301 @@
+{
+  "appName": {
+    "message": "Shortcut Blocker"
+  },
+  "appDesc": {
+    "message": "ブラウジング中のキーボードショートカットを個別にオン/オフ。誤操作の Ctrl+W、Backspace での戻る、F12 などをブロックできます。"
+  },
+  "openShortcutsTitle": {
+    "message": "Chrome のショートカット設定を開く"
+  },
+  "toggleTheme": {
+    "message": "テーマ切替"
+  },
+  "searchTitle": {
+    "message": "検索"
+  },
+  "capturePlaceholder": {
+    "message": "例: Ctrl + K（直接入力可）"
+  },
+  "captureTitle": {
+    "message": "キーを押して記録"
+  },
+  "record": {
+    "message": "記録"
+  },
+  "recording": {
+    "message": "記録中…"
+  },
+  "labelPlaceholder": {
+    "message": "ラベル (任意)"
+  },
+  "add": {
+    "message": "追加"
+  },
+  "cancel": {
+    "message": "キャンセル"
+  },
+  "catAll": {
+    "message": "全て"
+  },
+  "catNav": {
+    "message": "ナビ"
+  },
+  "catEdit": {
+    "message": "編集"
+  },
+  "catTab": {
+    "message": "タブ"
+  },
+  "catDev": {
+    "message": "開発"
+  },
+  "catCustom": {
+    "message": "カスタム"
+  },
+  "searchPlaceholder": {
+    "message": "ショートカットを検索"
+  },
+  "searchAddPlaceholder": {
+    "message": "検索 / 追加（例: Ctrl+K）"
+  },
+  "guideTitle": {
+    "message": "ショートカット登録の手順"
+  },
+  "guideStep1": {
+    "message": "下の「設定ページを開く」を押す"
+  },
+  "guideStep2": {
+    "message": "一覧から「Shortcut Blocker」を探す"
+  },
+  "guideStep4": {
+    "message": "キーを実際に押して記録する"
+  },
+  "guideRowDefault": {
+    "message": "対象の欄の入力ボックスをクリック"
+  },
+  "guideNote": {
+    "message": "登録すると、そのキーは何もしないコマンドに割り当てられ無効化されます。"
+  },
+  "openSettingsPage": {
+    "message": "設定ページを開く"
+  },
+  "close": {
+    "message": "閉じる"
+  },
+  "guideTargetFmt": {
+    "message": "対象: $label$（$combo$）",
+    "placeholders": {
+      "label": {
+        "content": "$1"
+      },
+      "combo": {
+        "content": "$2"
+      }
+    }
+  },
+  "guideRowFmt": {
+    "message": "一覧の「ブロック: $row$」の入力ボックスをクリック",
+    "placeholders": {
+      "row": {
+        "content": "$1"
+      }
+    }
+  },
+  "bulkLabel": {
+    "message": "このタブを"
+  },
+  "disableAll": {
+    "message": "すべて無効化"
+  },
+  "enableAll": {
+    "message": "すべて有効化"
+  },
+  "addCustom": {
+    "message": "＋ カスタムショートカットを追加"
+  },
+  "disableFmt": {
+    "message": "$name$ を無効化",
+    "placeholders": {
+      "name": {
+        "content": "$1"
+      }
+    }
+  },
+  "noteCommand": {
+    "message": "右のキーボードショートカットの設定から登録"
+  },
+  "noteUnblockable": {
+    "message": "ブラウザ制約によりブロック不可"
+  },
+  "gearTitle": {
+    "message": "Chrome のショートカット設定で登録"
+  },
+  "lockTitle": {
+    "message": "ブラウザ制約によりブロックできません"
+  },
+  "delete": {
+    "message": "削除"
+  },
+  "statusDisabled": {
+    "message": "$count$個のショートカットが無効",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "statusAllEnabled": {
+    "message": "全てのショートカットが有効"
+  },
+  "sc_nav_back": {
+    "message": "戻る"
+  },
+  "sc_nav_forward": {
+    "message": "進む"
+  },
+  "sc_nav_reload": {
+    "message": "ページ再読み込み"
+  },
+  "sc_nav_hard_reload": {
+    "message": "キャッシュクリア再読み込み"
+  },
+  "sc_nav_home": {
+    "message": "ホームページ"
+  },
+  "sc_nav_stop": {
+    "message": "読み込み中止"
+  },
+  "sc_nav_scrolldown": {
+    "message": "ページダウン"
+  },
+  "sc_nav_scrollup": {
+    "message": "ページアップ"
+  },
+  "sc_nav_top": {
+    "message": "ページ先頭"
+  },
+  "sc_nav_bottom": {
+    "message": "ページ末尾"
+  },
+  "sc_edit_copy": {
+    "message": "コピー"
+  },
+  "sc_edit_cut": {
+    "message": "切り取り"
+  },
+  "sc_edit_paste": {
+    "message": "貼り付け"
+  },
+  "sc_edit_undo": {
+    "message": "元に戻す"
+  },
+  "sc_edit_redo": {
+    "message": "やり直し"
+  },
+  "sc_edit_selectall": {
+    "message": "全選択"
+  },
+  "sc_edit_find": {
+    "message": "検索"
+  },
+  "sc_edit_findnext": {
+    "message": "次を検索"
+  },
+  "sc_edit_save": {
+    "message": "ページ保存"
+  },
+  "sc_edit_print": {
+    "message": "印刷"
+  },
+  "sc_tab_new": {
+    "message": "新しいタブ"
+  },
+  "sc_tab_close": {
+    "message": "タブを閉じる"
+  },
+  "sc_tab_reopen": {
+    "message": "閉じたタブを開く"
+  },
+  "sc_tab_next": {
+    "message": "次のタブ"
+  },
+  "sc_tab_prev": {
+    "message": "前のタブ"
+  },
+  "sc_tab_1": {
+    "message": "タブ1に移動"
+  },
+  "sc_tab_9": {
+    "message": "最後のタブに移動"
+  },
+  "sc_tab_newwindow": {
+    "message": "新しいウィンドウ"
+  },
+  "sc_tab_incognito": {
+    "message": "シークレットウィンドウ"
+  },
+  "sc_dev_tools": {
+    "message": "デベロッパーツール"
+  },
+  "sc_dev_tools2": {
+    "message": "デベロッパーツール"
+  },
+  "sc_dev_console": {
+    "message": "コンソール"
+  },
+  "sc_dev_source": {
+    "message": "ソース表示"
+  },
+  "sc_dev_inspect": {
+    "message": "要素の検証"
+  },
+  "cmd_block_nav_back": {
+    "message": "ブロック: 戻る (Alt+←)"
+  },
+  "cmd_block_nav_forward": {
+    "message": "ブロック: 進む (Alt+→)"
+  },
+  "cmd_block_nav_reload": {
+    "message": "ブロック: ページ再読み込み (Ctrl+R)"
+  },
+  "cmd_block_nav_hard_reload": {
+    "message": "ブロック: キャッシュクリア再読み込み (Ctrl+Shift+R)"
+  },
+  "cmd_block_nav_home": {
+    "message": "ブロック: ホームページ (Alt+Home)"
+  },
+  "cmd_block_tab_new": {
+    "message": "ブロック: 新しいタブ (Ctrl+T)"
+  },
+  "cmd_block_tab_close": {
+    "message": "ブロック: タブを閉じる (Ctrl+W)"
+  },
+  "cmd_block_tab_reopen": {
+    "message": "ブロック: 閉じたタブを開く (Ctrl+Shift+T)"
+  },
+  "cmd_block_tab_1": {
+    "message": "ブロック: タブ1に移動 (Ctrl+1)"
+  },
+  "cmd_block_tab_9": {
+    "message": "ブロック: 最後のタブに移動 (Ctrl+9)"
+  },
+  "cmd_block_tab_newwindow": {
+    "message": "ブロック: 新しいウィンドウ (Ctrl+N)"
+  },
+  "cmd_block_tab_incognito": {
+    "message": "ブロック: シークレットウィンドウ (Ctrl+Shift+N)"
+  },
+  "cmd_block_dev_tools2": {
+    "message": "ブロック: デベロッパーツール (Ctrl+Shift+I)"
+  },
+  "cmd_block_dev_console": {
+    "message": "ブロック: コンソール (Ctrl+Shift+J)"
+  },
+  "cmd_block_dev_source": {
+    "message": "ブロック: ソース表示 (Ctrl+U)"
+  },
+  "cmd_block_dev_inspect": {
+    "message": "ブロック: 要素の検証 (Ctrl+Shift+C)"
+  }
+}

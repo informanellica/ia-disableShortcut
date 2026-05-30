@@ -1,0 +1,301 @@
+{
+  "appName": {
+    "message": "Shortcut Blocker"
+  },
+  "appDesc": {
+    "message": "Включайте и отключайте отдельные сочетания клавиш при просмотре — блокируйте случайное Ctrl+W, навигацию по Backspace, F12 и другое."
+  },
+  "openShortcutsTitle": {
+    "message": "Открыть страницу сочетаний клавиш Chrome"
+  },
+  "toggleTheme": {
+    "message": "Сменить тему"
+  },
+  "searchTitle": {
+    "message": "Поиск"
+  },
+  "capturePlaceholder": {
+    "message": "напр. Ctrl + K (можно ввести)"
+  },
+  "captureTitle": {
+    "message": "Нажмите клавиши для записи"
+  },
+  "record": {
+    "message": "Запись"
+  },
+  "recording": {
+    "message": "Запись…"
+  },
+  "labelPlaceholder": {
+    "message": "Название (необязательно)"
+  },
+  "add": {
+    "message": "Добавить"
+  },
+  "cancel": {
+    "message": "Отмена"
+  },
+  "catAll": {
+    "message": "Все"
+  },
+  "catNav": {
+    "message": "Навиг."
+  },
+  "catEdit": {
+    "message": "Правка"
+  },
+  "catTab": {
+    "message": "Вкладки"
+  },
+  "catDev": {
+    "message": "Разраб."
+  },
+  "catCustom": {
+    "message": "Свои"
+  },
+  "searchPlaceholder": {
+    "message": "Поиск сочетаний"
+  },
+  "searchAddPlaceholder": {
+    "message": "Поиск / добавить (напр. Ctrl+K)"
+  },
+  "guideTitle": {
+    "message": "Как зарегистрировать сочетание"
+  },
+  "guideStep1": {
+    "message": "Нажмите «Открыть страницу настроек» ниже"
+  },
+  "guideStep2": {
+    "message": "Найдите «Shortcut Blocker» в списке"
+  },
+  "guideStep4": {
+    "message": "Нажмите клавиши для записи"
+  },
+  "guideRowDefault": {
+    "message": "Щёлкните поле ввода в нужной строке"
+  },
+  "guideNote": {
+    "message": "После регистрации клавиша назначается пустой команде и отключается."
+  },
+  "openSettingsPage": {
+    "message": "Открыть страницу настроек"
+  },
+  "close": {
+    "message": "Закрыть"
+  },
+  "guideTargetFmt": {
+    "message": "Цель: $label$ ($combo$)",
+    "placeholders": {
+      "label": {
+        "content": "$1"
+      },
+      "combo": {
+        "content": "$2"
+      }
+    }
+  },
+  "guideRowFmt": {
+    "message": "Щёлкните поле ввода в строке «Блокировать: $row$»",
+    "placeholders": {
+      "row": {
+        "content": "$1"
+      }
+    }
+  },
+  "bulkLabel": {
+    "message": "Эта вкладка:"
+  },
+  "disableAll": {
+    "message": "Отключить все"
+  },
+  "enableAll": {
+    "message": "Включить все"
+  },
+  "addCustom": {
+    "message": "+ Добавить своё сочетание"
+  },
+  "disableFmt": {
+    "message": "Отключить $name$",
+    "placeholders": {
+      "name": {
+        "content": "$1"
+      }
+    }
+  },
+  "noteCommand": {
+    "message": "Зарегистрируйте на странице сочетаний клавиш справа"
+  },
+  "noteUnblockable": {
+    "message": "Невозможно заблокировать (ограничение браузера)"
+  },
+  "gearTitle": {
+    "message": "Зарегистрировать на странице сочетаний Chrome"
+  },
+  "lockTitle": {
+    "message": "Невозможно заблокировать (ограничение браузера)"
+  },
+  "delete": {
+    "message": "Удалить"
+  },
+  "statusDisabled": {
+    "message": "Отключено сочетаний: $count$",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "statusAllEnabled": {
+    "message": "Все сочетания включены"
+  },
+  "sc_nav_back": {
+    "message": "Назад"
+  },
+  "sc_nav_forward": {
+    "message": "Вперёд"
+  },
+  "sc_nav_reload": {
+    "message": "Обновить страницу"
+  },
+  "sc_nav_hard_reload": {
+    "message": "Полная перезагрузка (очистить кэш)"
+  },
+  "sc_nav_home": {
+    "message": "Домашняя страница"
+  },
+  "sc_nav_stop": {
+    "message": "Остановить загрузку"
+  },
+  "sc_nav_scrolldown": {
+    "message": "На страницу вниз"
+  },
+  "sc_nav_scrollup": {
+    "message": "На страницу вверх"
+  },
+  "sc_nav_top": {
+    "message": "В начало страницы"
+  },
+  "sc_nav_bottom": {
+    "message": "В конец страницы"
+  },
+  "sc_edit_copy": {
+    "message": "Копировать"
+  },
+  "sc_edit_cut": {
+    "message": "Вырезать"
+  },
+  "sc_edit_paste": {
+    "message": "Вставить"
+  },
+  "sc_edit_undo": {
+    "message": "Отменить"
+  },
+  "sc_edit_redo": {
+    "message": "Повторить"
+  },
+  "sc_edit_selectall": {
+    "message": "Выделить всё"
+  },
+  "sc_edit_find": {
+    "message": "Найти"
+  },
+  "sc_edit_findnext": {
+    "message": "Найти далее"
+  },
+  "sc_edit_save": {
+    "message": "Сохранить страницу"
+  },
+  "sc_edit_print": {
+    "message": "Печать"
+  },
+  "sc_tab_new": {
+    "message": "Новая вкладка"
+  },
+  "sc_tab_close": {
+    "message": "Закрыть вкладку"
+  },
+  "sc_tab_reopen": {
+    "message": "Открыть закрытую вкладку"
+  },
+  "sc_tab_next": {
+    "message": "Следующая вкладка"
+  },
+  "sc_tab_prev": {
+    "message": "Предыдущая вкладка"
+  },
+  "sc_tab_1": {
+    "message": "Перейти к вкладке 1"
+  },
+  "sc_tab_9": {
+    "message": "Перейти к последней вкладке"
+  },
+  "sc_tab_newwindow": {
+    "message": "Новое окно"
+  },
+  "sc_tab_incognito": {
+    "message": "Окно инкогнито"
+  },
+  "sc_dev_tools": {
+    "message": "Инструменты разработчика"
+  },
+  "sc_dev_tools2": {
+    "message": "Инструменты разработчика"
+  },
+  "sc_dev_console": {
+    "message": "Консоль"
+  },
+  "sc_dev_source": {
+    "message": "Посмотреть код страницы"
+  },
+  "sc_dev_inspect": {
+    "message": "Просмотреть элемент"
+  },
+  "cmd_block_nav_back": {
+    "message": "Блокировать: Назад (Alt+←)"
+  },
+  "cmd_block_nav_forward": {
+    "message": "Блокировать: Вперёд (Alt+→)"
+  },
+  "cmd_block_nav_reload": {
+    "message": "Блокировать: Обновить страницу (Ctrl+R)"
+  },
+  "cmd_block_nav_hard_reload": {
+    "message": "Блокировать: Полная перезагрузка (очистить кэш) (Ctrl+Shift+R)"
+  },
+  "cmd_block_nav_home": {
+    "message": "Блокировать: Домашняя страница (Alt+Home)"
+  },
+  "cmd_block_tab_new": {
+    "message": "Блокировать: Новая вкладка (Ctrl+T)"
+  },
+  "cmd_block_tab_close": {
+    "message": "Блокировать: Закрыть вкладку (Ctrl+W)"
+  },
+  "cmd_block_tab_reopen": {
+    "message": "Блокировать: Открыть закрытую вкладку (Ctrl+Shift+T)"
+  },
+  "cmd_block_tab_1": {
+    "message": "Блокировать: Перейти к вкладке 1 (Ctrl+1)"
+  },
+  "cmd_block_tab_9": {
+    "message": "Блокировать: Перейти к последней вкладке (Ctrl+9)"
+  },
+  "cmd_block_tab_newwindow": {
+    "message": "Блокировать: Новое окно (Ctrl+N)"
+  },
+  "cmd_block_tab_incognito": {
+    "message": "Блокировать: Окно инкогнито (Ctrl+Shift+N)"
+  },
+  "cmd_block_dev_tools2": {
+    "message": "Блокировать: Инструменты разработчика (Ctrl+Shift+I)"
+  },
+  "cmd_block_dev_console": {
+    "message": "Блокировать: Консоль (Ctrl+Shift+J)"
+  },
+  "cmd_block_dev_source": {
+    "message": "Блокировать: Посмотреть код страницы (Ctrl+U)"
+  },
+  "cmd_block_dev_inspect": {
+    "message": "Блокировать: Просмотреть элемент (Ctrl+Shift+C)"
+  }
+}

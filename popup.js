@@ -1,3 +1,26 @@
+// --- i18n: fill static markup, getter for dynamic strings, localized labels ---
+const t = (key, subs) => chrome.i18n.getMessage(key, subs);
+function applyI18n() {
+  document.querySelectorAll('[data-i18n]').forEach((el) => {
+    const m = t(el.dataset.i18n);
+    if (m) el.textContent = m;
+  });
+  document.querySelectorAll('[data-i18n-title]').forEach((el) => {
+    const m = t(el.dataset.i18nTitle);
+    if (m) el.title = m;
+  });
+  document.querySelectorAll('[data-i18n-placeholder]').forEach((el) => {
+    const m = t(el.dataset.i18nPlaceholder);
+    if (m) el.placeholder = m;
+  });
+}
+// Localized display label for a built-in shortcut; custom entries keep their own.
+function scLabel(s) {
+  if (!s) return '';
+  if (s.category === 'custom') return s.label;
+  return t('sc_' + s.id.replace(/-/g, '_')) || s.label;
+}
+
 const DEFAULT_SHORTCUTS = [
   // Navigation
   { id: 'nav-back', keys: ['Alt', 'ArrowLeft'], label: '戻る', category: 'navigation', enabled: true },
@@ -70,9 +93,9 @@ function openShortcutsPage() {
 // names the exact row to look for (matches the manifest command description).
 function openGuide(shortcut) {
   const combo = shortcut.keys.map(formatKey).join('+');
-  document.getElementById('guideTarget').textContent = `対象: ${shortcut.label}（${combo}）`;
-  document.getElementById('guideRow').innerHTML =
-    `一覧の <b>「ブロック: ${shortcut.label} (${combo})」</b> の入力ボックスをクリック`;
+  const label = scLabel(shortcut);
+  document.getElementById('guideTarget').textContent = t('guideTargetFmt', [label, combo]);
+  document.getElementById('guideRow').textContent = t('guideRowFmt', [`${label} (${combo})`]);
   document.getElementById('guideOverlay').classList.remove('hidden');
 }
 
@@ -192,7 +215,7 @@ function renderList() {
   const q = searchQuery.trim().toLowerCase();
   if (q) {
     filtered = filtered.filter(s => {
-      const hay = `${s.label} ${s.keys.map(formatKey).join(' ')} ${s.keys.join(' ')}`.toLowerCase();
+      const hay = `${scLabel(s)} ${s.keys.map(formatKey).join(' ')} ${s.keys.join(' ')}`.toLowerCase();
       return hay.includes(q);
     });
   }
@@ -204,10 +227,10 @@ function renderList() {
     const bulkLi = document.createElement('li');
     bulkLi.className = 'bulk-row';
     bulkLi.innerHTML = `
-      <span class="bulk-label">このタブを</span>
+      <span class="bulk-label">${t('bulkLabel')}</span>
       <div class="bulk-actions">
-        <button class="btn-bulk${allDisabled ? ' active' : ''}" data-act="disable" type="button">すべて無効化</button>
-        <button class="btn-bulk${allEnabled ? ' active' : ''}" data-act="enable" type="button">すべて有効化</button>
+        <button class="btn-bulk${allDisabled ? ' active' : ''}" data-act="disable" type="button">${t('disableAll')}</button>
+        <button class="btn-bulk${allEnabled ? ' active' : ''}" data-act="enable" type="button">${t('enableAll')}</button>
       </div>
     `;
     bulkLi.querySelector('[data-act="disable"]').addEventListener('click', () => setAllInCurrentCategory(false));
@@ -219,7 +242,7 @@ function renderList() {
   if (currentCategory === 'custom') {
     const addLi = document.createElement('li');
     addLi.className = 'add-custom-row';
-    addLi.innerHTML = '<button class="btn-add-custom" type="button">＋ カスタムショートカットを追加</button>';
+    addLi.innerHTML = '<button class="btn-add-custom" type="button">' + t('addCustom') + '</button>';
     addLi.querySelector('button').addEventListener('click', openCustomForm);
     list.appendChild(addLi);
   }
@@ -241,17 +264,17 @@ function renderList() {
 
     let noteHtml = '';
     if (commandManaged) {
-      noteHtml = `<div class="shortcut-note needs-setup">右のキーボードショートカットの設定から登録</div>`;
+      noteHtml = `<div class="shortcut-note needs-setup">${t('noteCommand')}</div>`;
     } else if (unblockable) {
-      noteHtml = `<div class="shortcut-note unblockable">ブラウザ制約によりブロック不可</div>`;
+      noteHtml = `<div class="shortcut-note unblockable">${t('noteUnblockable')}</div>`;
     }
 
     // Pick the control: gear (command-managed) / lock (unblockable) / toggle.
     let controlHtml;
     if (commandManaged) {
-      controlHtml = `<button class="btn-gear" type="button" title="Chrome のショートカット設定で登録">${ICON_GEAR}</button>`;
+      controlHtml = `<button class="btn-gear" type="button" title="${t('gearTitle')}">${ICON_GEAR}</button>`;
     } else if (unblockable) {
-      controlHtml = `<span class="ctrl-locked" title="ブラウザ制約によりブロックできません">${ICON_LOCK}</span>`;
+      controlHtml = `<span class="ctrl-locked" title="${t('lockTitle')}">${ICON_LOCK}</span>`;
     } else {
       // Toggle ON (checked) = この機能を無効化（ブロック）
       controlHtml = `
@@ -264,12 +287,12 @@ function renderList() {
     li.innerHTML = `
       <div class="shortcut-info">
         <div class="shortcut-keys">${keysHtml}</div>
-        <div class="shortcut-label">${shortcut.label} を無効化</div>
+        <div class="shortcut-label">${t('disableFmt', [scLabel(shortcut)])}</div>
         ${noteHtml}
       </div>
       <div class="shortcut-actions">
         ${controlHtml}
-        ${isCustom ? `<button class="btn-delete" data-id="${shortcut.id}" title="削除">&times;</button>` : ''}
+        ${isCustom ? `<button class="btn-delete" data-id="${shortcut.id}" title="${t('delete')}">&times;</button>` : ''}
       </div>
     `;
 
@@ -302,8 +325,8 @@ function updateStatus() {
   const disabled = shortcuts.filter(s => !s.enabled).length;
   const status = document.getElementById('status');
   status.textContent = disabled > 0
-    ? `${disabled}個のショートカットが無効`
-    : '全てのショートカットが有効';
+    ? t('statusDisabled', [String(disabled)])
+    : t('statusAllEnabled');
 }
 
 // Theme (dark/light) toggle — Bootstrap Icons (MIT), inlined as SVG
@@ -383,7 +406,7 @@ const searchAddBtn = document.getElementById('searchAdd');
 function refreshSearchBar() {
   const onCustom = currentCategory === 'custom';
   searchAddBtn.classList.toggle('hidden', !onCustom);
-  searchInput.placeholder = onCustom ? '検索 / 追加（例: Ctrl+K）' : 'ショートカットを検索';
+  searchInput.placeholder = onCustom ? t('searchAddPlaceholder') : t('searchPlaceholder');
 }
 
 function showSearch(show) {
@@ -514,7 +537,7 @@ let capturing = false;
 function setCapturing(on) {
   capturing = on;
   captureToggle.classList.toggle('active', on);
-  captureToggle.textContent = on ? '記録中…' : '記録';
+  captureToggle.textContent = on ? t('recording') : t('record');
   captureInput.readOnly = on;
   if (on) captureInput.focus();
 }
@@ -592,4 +615,5 @@ document.getElementById('saveCustom').addEventListener('click', () => {
 });
 
 // Initialize
+applyI18n();
 loadShortcuts();
