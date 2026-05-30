@@ -33,4 +33,4 @@ only shortcut definitions and on/off flags, never page or keystroke content.
 
 ## Contact
 
-Questions about this policy: support@informanellica.com
+Questions about this policy: [support@informanellica.com](mailto:support@informanellica.com)
