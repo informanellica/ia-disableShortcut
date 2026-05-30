@@ -317,10 +317,32 @@ function applyTheme(theme) {
   const btn = document.getElementById('themeToggle');
   // Show the icon for the current theme (sun = light, moon = dark)
   if (btn) btn.innerHTML = t === 'light' ? ICON_SUN : ICON_MOON;
-  localStorage.setItem('theme', t);
 }
 
-applyTheme(localStorage.getItem('theme') || 'dark');
+const prefersDark = () =>
+  window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+
+// Stored manual choice wins; otherwise follow the system; default light.
+function resolveTheme() {
+  const s = localStorage.getItem('theme');
+  if (s === 'light' || s === 'dark') return s;
+  return prefersDark() ? 'dark' : 'light';
+}
+
+function setTheme(theme) {
+  applyTheme(theme);
+  localStorage.setItem('theme', theme);
+}
+
+applyTheme(resolveTheme());
+
+// Follow OS theme changes while no manual choice is stored.
+if (window.matchMedia) {
+  window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', (e) => {
+    const s = localStorage.getItem('theme');
+    if (s !== 'light' && s !== 'dark') applyTheme(e.matches ? 'dark' : 'light');
+  });
+}
 
 // Header shortcut: open Chrome's shortcut-assignment page. Bootstrap "gear"
 // icon (MIT), inlined as SVG.
@@ -344,7 +366,7 @@ document.getElementById('guideOverlay').addEventListener('click', (e) => {
 
 document.getElementById('themeToggle').addEventListener('click', () => {
   const current = document.body.classList.contains('theme-light') ? 'light' : 'dark';
-  applyTheme(current === 'light' ? 'dark' : 'light');
+  setTheme(current === 'light' ? 'dark' : 'light');
 });
 
 // ---- Search / quick-add ----

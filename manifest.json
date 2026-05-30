@@ -1,7 +1,7 @@
 {
   "manifest_version": 3,
   "name": "Shortcut Blocker",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "キーボードショートカットの有効/無効を管理するエクステンション",
   "permissions": ["storage"],
   "host_permissions": ["<all_urls>"],
