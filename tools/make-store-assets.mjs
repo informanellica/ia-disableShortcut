@@ -22,7 +22,7 @@ const CONFIG = {
   zip: "shortcut-blocker-v1.0.2.zip",
   uiLocale: "ja",
   privacy: "https://informanellica.github.io/ia-disableShortcut/PRIVACY",
-  category: "Productivity / Accessibility",
+  category: "ツール (Tools) ／ 代替: ユーザー補助機能",
   perms: "storage, host access (all sites)",
   version: "1.0.2",
   summaryEN: "Turn individual keyboard shortcuts on or off while browsing — block accidental Ctrl+W, Backspace navigation, F12, and more.",
