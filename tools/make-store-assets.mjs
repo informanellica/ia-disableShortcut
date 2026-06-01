@@ -21,7 +21,7 @@ const CONFIG = {
   storeName: "Shortcut Blocker",
   zip: "shortcut-blocker-v1.0.3.zip",
   uiLocale: "ja",
-  privacy: "https://informanellica.github.io/ia-disableShortcut/PRIVACY",
+  privacy: "https://github.com/informanellica/ia-disableShortcut/blob/main/PRIVACY.md",
   category: "ツール (Tools) ／ 代替: ユーザー補助機能",
   perms: "storage, host access (all sites)",
   version: "1.0.3",
@@ -29,7 +29,7 @@ const CONFIG = {
   summaryJA: "ブラウジング中のキーボードショートカットを個別にオン/オフ。誤操作の Ctrl+W、Backspace での戻る、F12 などをブロックできます。",
   homepage: "https://informanellica.github.io/",
   support: "https://informanellica.github.io/support.html#shortcut-blocker",
-  singlePurpose: "Enable or disable specified keyboard shortcuts on web pages.",
+  singlePurpose: "Webページ上で指定されたキーボードショートカットを有効化または無効化する。",
   // Store "Description" (16,000 chars) per language — paste into the listing.
   desc: {
     en: "Shortcut Blocker lets you turn individual keyboard shortcuts on or off while browsing — block an accidental Ctrl+W, stop Backspace/Alt+← navigation, disable F12, and more, organized by category with your own custom shortcuts. Settings sync across your signed-in browsers, with light and dark themes. No data is collected and no network requests are made; key events are used only to block the shortcuts you choose.",
@@ -227,7 +227,20 @@ ${descs}
 
 ## 手順6 — プライバシー（Privacy practices タブ）
 - 単一目的（Single purpose）: ${cfg.singlePurpose}
-- この版の権限: ${cfg.perms}（正当化の文言は末尾の付録に）
+- この版の権限: ${cfg.perms}
+
+**権限が必要な理由**
+
+storage が必要な理由:
+\`\`\`text
+無効化したショートカットとカスタム設定の保存のため(ブラウザ同期)。
+\`\`\`
+
+ホスト権限が必要な理由:
+\`\`\`text
+訪問ページでキーイベントを捕捉し、設定したショートカットをブロックするという中心機能のため。この目的のみで全ページで動作し、ページ内容は読み取りません。
+\`\`\`
+
 - リモートコードの使用: **なし（No）**
 - データ収集: **なし** → 3つの宣言にチェック（販売しない / 単一目的に限定 / 信用度評価に使わない）
 - プライバシーポリシー URL: ${cfg.privacy}
